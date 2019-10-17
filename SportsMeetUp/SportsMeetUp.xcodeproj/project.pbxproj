@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06656DDD2356F8D5000392DD /* Test1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06656DDC2356F8D5000392DD /* Test1.storyboard */; };
+		06656DE12356FCF7000392DD /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06656DE02356FCF7000392DD /* DashboardVC.swift */; };
+		06656DE42357324F000392DD /* SoccerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06656DE32357324F000392DD /* SoccerVC.swift */; };
+		06656DEA2358417C000392DD /* SetTrackingKPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06656DE92358417C000392DD /* SetTrackingKPI.swift */; };
 		570353E6235481560098C9DA /* MyTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570353E5235481560098C9DA /* MyTeamsViewController.swift */; };
 		570353EA235483450098C9DA /* MyTeamsCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570353E9235483450098C9DA /* MyTeamsCustomCell.swift */; };
 		570353EC23548B5D0098C9DA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570353EB23548B5D0098C9DA /* Constants.swift */; };
@@ -51,6 +55,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06656DDC2356F8D5000392DD /* Test1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test1.storyboard; sourceTree = "<group>"; };
+		06656DE02356FCF7000392DD /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		06656DE32357324F000392DD /* SoccerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerVC.swift; sourceTree = "<group>"; };
+		06656DE92358417C000392DD /* SetTrackingKPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTrackingKPI.swift; sourceTree = "<group>"; };
 		570353E5235481560098C9DA /* MyTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamsViewController.swift; sourceTree = "<group>"; };
 		570353E9235483450098C9DA /* MyTeamsCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamsCustomCell.swift; sourceTree = "<group>"; };
 		570353EB23548B5D0098C9DA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -111,6 +119,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06656DDE2356FA68000392DD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				06656DDF2356FB86000392DD /* DashboardController */,
+				06656DE2235731FE000392DD /* SoccerController */,
+				570353F02354A4560098C9DA /* SetKPIViewController */,
+				06656DE823584149000392DD /* SetTrackingKPI */,
+				570353ED23548BF90098C9DA /* AddTeamProfileViewController */,
+				570353E7235482E30098C9DA /* MyTeamsViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		06656DDF2356FB86000392DD /* DashboardController */ = {
+			isa = PBXGroup;
+			children = (
+				06656DE02356FCF7000392DD /* DashboardVC.swift */,
+			);
+			path = DashboardController;
+			sourceTree = "<group>";
+		};
+		06656DE2235731FE000392DD /* SoccerController */ = {
+			isa = PBXGroup;
+			children = (
+				06656DE32357324F000392DD /* SoccerVC.swift */,
+			);
+			path = SoccerController;
+			sourceTree = "<group>";
+		};
+		06656DE823584149000392DD /* SetTrackingKPI */ = {
+			isa = PBXGroup;
+			children = (
+				06656DE92358417C000392DD /* SetTrackingKPI.swift */,
+			);
+			path = SetTrackingKPI;
+			sourceTree = "<group>";
+		};
 		570353E7235482E30098C9DA /* MyTeamsViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,10 +214,9 @@
 				5774BE4E233482000023DCCF /* AppDelegate.swift */,
 				5774BE50233482000023DCCF /* ViewController.swift */,
 				57B343092334E1EA0011C790 /* AddPlayerProfileViewController.swift */,
-				570353F02354A4560098C9DA /* SetKPIViewController */,
-				570353ED23548BF90098C9DA /* AddTeamProfileViewController */,
-				570353E7235482E30098C9DA /* MyTeamsViewController */,
+				06656DDE2356FA68000392DD /* Controllers */,
 				5774BE52233482000023DCCF /* Main.storyboard */,
+				06656DDC2356F8D5000392DD /* Test1.storyboard */,
 				5774BE552334820D0023DCCF /* Assets.xcassets */,
 				5774BE572334820D0023DCCF /* LaunchScreen.storyboard */,
 				5774BE5A2334820D0023DCCF /* Info.plist */,
@@ -355,6 +399,7 @@
 				5774BE9B233484990023DCCF /* AnimatedField.xib in Resources */,
 				5774BE592334820D0023DCCF /* LaunchScreen.storyboard in Resources */,
 				57B342D92334CF0D0011C790 /* design.graffiti.comicsansmsgras.ttf in Resources */,
+				06656DDD2356F8D5000392DD /* Test1.storyboard in Resources */,
 				5774BE562334820D0023DCCF /* Assets.xcassets in Resources */,
 				57B342DA2334CF0D0011C790 /* sharefonts.net.txt in Resources */,
 				57B342D72334CF0D0011C790 /* COMIC.TTF in Resources */,
@@ -373,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5774BE99233484990023DCCF /* AnimatedField+TextViewDelegate.swift in Sources */,
+				06656DE12356FCF7000392DD /* DashboardVC.swift in Sources */,
 				5774BE96233484990023DCCF /* UIView+Shake.swift in Sources */,
 				5774BE8F233484990023DCCF /* AnimatedFieldFormat.swift in Sources */,
 				57B342F42334D03F0011C790 /* KeyboardAvoiding.swift in Sources */,
@@ -380,6 +426,7 @@
 				570353F22354A48F0098C9DA /* SetKPIViewController.swift in Sources */,
 				57B3430A2334E1EA0011C790 /* AddPlayerProfileViewController.swift in Sources */,
 				57B343072334DD240011C790 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				06656DE42357324F000392DD /* SoccerVC.swift in Sources */,
 				5774BE95233484990023DCCF /* String+RegEx.swift in Sources */,
 				5774BE94233484990023DCCF /* Date+Format.swift in Sources */,
 				5774BE98233484990023DCCF /* AnimatedFieldType.swift in Sources */,
@@ -388,6 +435,7 @@
 				57B343062334DD240011C790 /* TPKeyboardAvoidingTableView.m in Sources */,
 				57B343052334DD240011C790 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				5774BE51233482000023DCCF /* ViewController.swift in Sources */,
+				06656DEA2358417C000392DD /* SetTrackingKPI.swift in Sources */,
 				57B342F52334D03F0011C790 /* KeyboardDismissingView.swift in Sources */,
 				5774BE9A233484990023DCCF /* AnimatedFieldAlertPosition.swift in Sources */,
 				5774BE91233484990023DCCF /* AnimatedField+TextFieldDelegate.swift in Sources */,
