@@ -1,50 +1,61 @@
 //
-//  SetKPIViewController.swift
+//  SoccerVC.swift
 //  SportsMeetUp
 //
-//  Created by Pradumna Patil on 10/14/19.
+//  Created by Shashi Kiran Kuppili on 10/16/19.
 //  Copyright © 2019 Quest-Global. All rights reserved.
 //
 
 import UIKit
 
-class SetKPIViewController: UIViewController {
+class SoccerVC: UIViewController {
+
+    @IBOutlet weak var txtFieldSelectPlayer: CustomTextField!
+    @IBOutlet weak var txtFieldSelectPosition: CustomTextField!
+    @IBOutlet weak var txtFieldSelectFormation: CustomTextField!
+    @IBOutlet weak var txtFieldSelectOppositionTeam: CustomTextField!
 
     
-    @IBOutlet weak var tblViewStatistics: UITableView!
-    @IBOutlet weak var txtFieldSelectPosition: UITextField!
-    @IBOutlet weak var txtFieldSelectSport: UITextField!
-    @IBOutlet weak var txtFieldSelectPlayer: UITextField!
     let arrPositionArray = ["Goalkeeper", "Full-backs", "Centre-Backs", "Sweeper", "Central Midfield", "Wide Midfield", "Striker", "Behind the Striker"]
     let arrPlayerArray = ["David Beckham", "Reggie Bush", "Tony Romo", "Diego Maradona", "Wayne Rooney", "Vyacheslav Malafeev", "Ian Roberts", "Justin Fashanu", "Zinedine Zidane", "Luís Figo", "Paris Jackson"]
-    let arrSportArray = ["Football", "Cricket", "Baseball", "Basketball", "Tennis", "Badminton"]
-    var arrStatistics = ["Statistics1", "Statistics2", "Statistics3", "Statistics4", "Statistics5", "Statistics6", "Statistics7", "Statistics8", "Statistics9", "Statistics10", ]
+    let arrFormationArray = ["Football", "Cricket", "Baseball", "Basketball", "Tennis", "Badminton"]
+    let arrTeamArray = ["Team1", "Team2", "Team3", "Team4", "Team5", "Team6", "Team7", "Team8", "Team9", "Team10", ]
 
     
-    let positionPicker = UIPickerView()
     let playerPicker = UIPickerView()
-    let sportsPicker = UIPickerView()
+    let positionPicker = UIPickerView()
+    let formationPicker = UIPickerView()
+    let teamPicker = UIPickerView()
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        positionPicker.delegate = self
-        positionPicker.dataSource = self
-        txtFieldSelectPosition.inputView = positionPicker
-        txtFieldSelectPosition.inputAccessoryView = createToolBar()
-        
-        sportsPicker.delegate = self
-        sportsPicker.dataSource = self
-        txtFieldSelectSport.inputView = sportsPicker
-        txtFieldSelectSport.inputAccessoryView = createToolBar()
         
         playerPicker.delegate = self
         playerPicker.dataSource = self
         txtFieldSelectPlayer.inputView = playerPicker
         txtFieldSelectPlayer.inputAccessoryView = createToolBar()
         
-        self.title = "Set Tracking KPI's"
-        // Do any additional setup after loading the view.
+        positionPicker.delegate = self
+        positionPicker.dataSource = self
+        txtFieldSelectPosition.inputView = positionPicker
+        txtFieldSelectPosition.inputAccessoryView = createToolBar()
+        
+        formationPicker.delegate = self
+        formationPicker.dataSource = self
+        txtFieldSelectFormation.inputView = formationPicker
+        txtFieldSelectFormation.inputAccessoryView = createToolBar()
+
+        teamPicker.delegate = self
+        teamPicker.dataSource = self
+        txtFieldSelectOppositionTeam.inputView = teamPicker
+        txtFieldSelectOppositionTeam.inputAccessoryView = createToolBar()
+    }
+    
+    
+    private func setUpScreens() {
+        
+    }
+    @IBAction func trackingButton(_ sender: UIButton) {
     }
     
     func createToolBar() -> UIToolbar {
@@ -54,7 +65,7 @@ class SetKPIViewController: UIViewController {
         toolBar.tintColor = UIColor(red: 76/255, green: 217/255, blue: 100/255, alpha: 1)
         toolBar.sizeToFit()
         toolBar.isUserInteractionEnabled = true
-
+        
         let cancelButton = UIButton()
         cancelButton.sizeToFit()
         cancelButton.titleLabel?.font = UIFont(name: ComicSansMS.Regular.rawValue, size: 14)
@@ -81,83 +92,66 @@ class SetKPIViewController: UIViewController {
         
         return toolBar
     }
+    
     @objc func doneButtonClicked() {
         self.view.endEditing(true)
     }
     @objc func cancelButtonClicked() {
-        txtFieldSelectPosition.text = ""
+        //txtFieldSelectPosition.text = ""
         self.view.endEditing(true)
     }
 
 }
+/*
+ let playerPicker = UIPickerView()
+ let positionPicker = UIPickerView()
+ let formationPicker = UIPickerView()
+ let teamPicker = UIPickerView()
 
-extension SetKPIViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+ 
+ */
+
+extension SoccerVC: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if pickerView == positionPicker {
-            return arrPositionArray.count
-        } else if pickerView == sportsPicker {
-            return arrSportArray.count
-        } else if pickerView == playerPicker {
+        if pickerView == playerPicker {
             return arrPlayerArray.count
+        } else if pickerView == positionPicker {
+            return arrPositionArray.count
+        } else if pickerView == formationPicker {
+            return arrFormationArray.count
+        } else if pickerView == teamPicker {
+            return arrTeamArray.count
         } else {
             return 0
         }
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
-        if pickerView == positionPicker {
-            return arrPositionArray[row]
-        } else if pickerView == sportsPicker {
-            return arrSportArray[row]
-        } else if pickerView == playerPicker {
+        if pickerView == playerPicker {
             return arrPlayerArray[row]
+        } else if pickerView == positionPicker {
+            return arrPositionArray[row]
+        } else if pickerView == formationPicker {
+            return arrFormationArray[row]
+        } else if pickerView == teamPicker {
+            return arrTeamArray[row]
         } else {
             return ""
         }
+
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if pickerView == positionPicker {
-            txtFieldSelectPosition.text =  arrPositionArray[row]
-        } else if pickerView == sportsPicker {
-            txtFieldSelectSport.text =  arrSportArray[row]
-        } else if pickerView == playerPicker {
+        if pickerView == playerPicker {
             txtFieldSelectPlayer.text =  arrPlayerArray[row]
+        } else if pickerView == positionPicker {
+            txtFieldSelectPosition.text =  arrPositionArray[row]
+        } else if pickerView == formationPicker {
+            txtFieldSelectFormation.text =  arrFormationArray[row]
+        } else if pickerView == teamPicker {
+            txtFieldSelectOppositionTeam.text =  arrTeamArray[row]
         }
     }
 }
-extension SetKPIViewController:UITableViewDelegate, UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrStatistics.count
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let myTeamsCustomCell = tableView.dequeueReusableCell(withIdentifier: "MyTeamsCustomCell") as! MyTeamsCustomCell
-        myTeamsCustomCell.lblTeamTitle.text = "\(arrStatistics[indexPath.row])"
-        return myTeamsCustomCell
-    }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 40
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -26,12 +26,13 @@ class MyTeamsViewController: UIViewController {
         longTitleLabel.setTitleColor(.black, for: .normal)
         longTitleLabel.setTitle("Add Team", for: .normal)
         longTitleLabel.addTarget(self, action: #selector(btnAddTeamClicked), for: .touchUpInside)
-        longTitleLabel.titleLabel?.font = UIFont(name: ComicSansMS.Regular.rawValue, size: 13)
+        longTitleLabel.titleLabel?.font = UIFont(name: ComicSansMS.Regular.rawValue, size: 16)
         let rightItem = UIBarButtonItem(customView: longTitleLabel)
         self.navigationItem.rightBarButtonItem = rightItem
     }
     @objc func btnAddTeamClicked() {
-        
+        let addTeamProfileViewController = Storyboards.Coach.rawValue.instantiateViewController(withIdentifier: "AddTeamProfileViewController") as! AddTeamProfileViewController
+        self.navigationController?.pushViewController(addTeamProfileViewController, animated: true)
     }
 }
 

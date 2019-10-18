@@ -12,6 +12,8 @@
 		570353EC23548B5D0098C9DA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570353EB23548B5D0098C9DA /* Constants.swift */; };
 		570353EF23548C150098C9DA /* AddTeamProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570353EE23548C150098C9DA /* AddTeamProfileViewController.swift */; };
 		570353F22354A48F0098C9DA /* SetKPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570353F12354A48F0098C9DA /* SetKPIViewController.swift */; };
+		57121DB923570C57005F125E /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57121DB823570C57005F125E /* TrackingViewController.swift */; };
+		57121DBC23570D1F005F125E /* ActiveTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57121DBB23570D1F005F125E /* ActiveTrackingViewController.swift */; };
 		5774BE4F233482000023DCCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5774BE4E233482000023DCCF /* AppDelegate.swift */; };
 		5774BE51233482000023DCCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5774BE50233482000023DCCF /* ViewController.swift */; };
 		5774BE54233482000023DCCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5774BE52233482000023DCCF /* Main.storyboard */; };
@@ -48,6 +50,12 @@
 		57B343072334DD240011C790 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B343012334DD240011C790 /* TPKeyboardAvoidingScrollView.m */; };
 		57B343082334DD240011C790 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B343032334DD240011C790 /* TPKeyboardAvoidingCollectionView.m */; };
 		57B3430A2334E1EA0011C790 /* AddPlayerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B343092334E1EA0011C790 /* AddPlayerProfileViewController.swift */; };
+		57C8DDCF23597E5B00978EFE /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C8DDCD23597E5B00978EFE /* Coach.storyboard */; };
+		57C8DDD423598D2800978EFE /* SoccerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C8DDD323598D2800978EFE /* SoccerVC.swift */; };
+		57C8DDD72359B0D800978EFE /* SetTrackingKPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C8DDD62359B0D800978EFE /* SetTrackingKPI.swift */; };
+		57C8DDDB2359C3CF00978EFE /* UserRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C8DDDA2359C3CF00978EFE /* UserRegistrationViewController.swift */; };
+		57C8DDDE2359CA6A00978EFE /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C8DDDD2359CA6A00978EFE /* DashboardVC.swift */; };
+		57C8DDE12359CAB500978EFE /* AddPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C8DDE02359CAB500978EFE /* AddPlayerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +64,8 @@
 		570353EB23548B5D0098C9DA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		570353EE23548C150098C9DA /* AddTeamProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamProfileViewController.swift; sourceTree = "<group>"; };
 		570353F12354A48F0098C9DA /* SetKPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetKPIViewController.swift; sourceTree = "<group>"; };
+		57121DB823570C57005F125E /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
+		57121DBB23570D1F005F125E /* ActiveTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTrackingViewController.swift; sourceTree = "<group>"; };
 		5774BE4B233482000023DCCF /* SportsMeetUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsMeetUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5774BE4E233482000023DCCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5774BE50233482000023DCCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +108,12 @@
 		57B343032334DD240011C790 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		57B343042334DD240011C790 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
 		57B343092334E1EA0011C790 /* AddPlayerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerProfileViewController.swift; sourceTree = "<group>"; };
+		57C8DDCE23597E5B00978EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SportsMeetUp/Base.lproj/Coach.storyboard; sourceTree = "<group>"; };
+		57C8DDD323598D2800978EFE /* SoccerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoccerVC.swift; sourceTree = "<group>"; };
+		57C8DDD62359B0D800978EFE /* SetTrackingKPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTrackingKPI.swift; sourceTree = "<group>"; };
+		57C8DDDA2359C3CF00978EFE /* UserRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewController.swift; sourceTree = "<group>"; };
+		57C8DDDD2359CA6A00978EFE /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		57C8DDE02359CAB500978EFE /* AddPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +160,22 @@
 			path = SetKPIViewController;
 			sourceTree = "<group>";
 		};
+		57121DB723570C3C005F125E /* TrackingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				57121DB823570C57005F125E /* TrackingViewController.swift */,
+			);
+			path = TrackingViewController;
+			sourceTree = "<group>";
+		};
+		57121DBA23570D0F005F125E /* ActiveTrackingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				57121DBB23570D1F005F125E /* ActiveTrackingViewController.swift */,
+			);
+			path = ActiveTrackingViewController;
+			sourceTree = "<group>";
+		};
 		5774BE42233481FF0023DCCF = {
 			isa = PBXGroup;
 			children = (
@@ -169,10 +201,17 @@
 				5774BE4E233482000023DCCF /* AppDelegate.swift */,
 				5774BE50233482000023DCCF /* ViewController.swift */,
 				57B343092334E1EA0011C790 /* AddPlayerProfileViewController.swift */,
+				57C8DDDC2359CA6A00978EFE /* DashboardController */,
+				57C8DDD82359C3A800978EFE /* Player Flow */,
+				57C8DDD52359B0D800978EFE /* SetTrackingKPI */,
+				57C8DDD223598D2800978EFE /* SoccerController */,
+				57121DBA23570D0F005F125E /* ActiveTrackingViewController */,
+				57121DB723570C3C005F125E /* TrackingViewController */,
 				570353F02354A4560098C9DA /* SetKPIViewController */,
 				570353ED23548BF90098C9DA /* AddTeamProfileViewController */,
 				570353E7235482E30098C9DA /* MyTeamsViewController */,
 				5774BE52233482000023DCCF /* Main.storyboard */,
+				57C8DDCD23597E5B00978EFE /* Coach.storyboard */,
 				5774BE552334820D0023DCCF /* Assets.xcassets */,
 				5774BE572334820D0023DCCF /* LaunchScreen.storyboard */,
 				5774BE5A2334820D0023DCCF /* Info.plist */,
@@ -292,6 +331,55 @@
 			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
+		57C8DDD223598D2800978EFE /* SoccerController */ = {
+			isa = PBXGroup;
+			children = (
+				57C8DDD323598D2800978EFE /* SoccerVC.swift */,
+			);
+			path = SoccerController;
+			sourceTree = "<group>";
+		};
+		57C8DDD52359B0D800978EFE /* SetTrackingKPI */ = {
+			isa = PBXGroup;
+			children = (
+				57C8DDD62359B0D800978EFE /* SetTrackingKPI.swift */,
+			);
+			path = SetTrackingKPI;
+			sourceTree = "<group>";
+		};
+		57C8DDD82359C3A800978EFE /* Player Flow */ = {
+			isa = PBXGroup;
+			children = (
+				57C8DDDF2359CAA600978EFE /* AddPlayerController */,
+				57C8DDD92359C3B900978EFE /* UserRegistrationViewController */,
+			);
+			path = "Player Flow";
+			sourceTree = "<group>";
+		};
+		57C8DDD92359C3B900978EFE /* UserRegistrationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				57C8DDDA2359C3CF00978EFE /* UserRegistrationViewController.swift */,
+			);
+			path = UserRegistrationViewController;
+			sourceTree = "<group>";
+		};
+		57C8DDDC2359CA6A00978EFE /* DashboardController */ = {
+			isa = PBXGroup;
+			children = (
+				57C8DDDD2359CA6A00978EFE /* DashboardVC.swift */,
+			);
+			path = DashboardController;
+			sourceTree = "<group>";
+		};
+		57C8DDDF2359CAA600978EFE /* AddPlayerController */ = {
+			isa = PBXGroup;
+			children = (
+				57C8DDE02359CAB500978EFE /* AddPlayerController.swift */,
+			);
+			path = AddPlayerController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -358,6 +446,7 @@
 				5774BE562334820D0023DCCF /* Assets.xcassets in Resources */,
 				57B342DA2334CF0D0011C790 /* sharefonts.net.txt in Resources */,
 				57B342D72334CF0D0011C790 /* COMIC.TTF in Resources */,
+				57C8DDCF23597E5B00978EFE /* Coach.storyboard in Resources */,
 				5774BE54233482000023DCCF /* Main.storyboard in Resources */,
 				57B342D82334CF0D0011C790 /* design.graffiti.comicsansms.ttf in Resources */,
 				5774BE90233484990023DCCF /* .gitkeep in Resources */,
@@ -373,25 +462,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				5774BE99233484990023DCCF /* AnimatedField+TextViewDelegate.swift in Sources */,
+				57C8DDD423598D2800978EFE /* SoccerVC.swift in Sources */,
 				5774BE96233484990023DCCF /* UIView+Shake.swift in Sources */,
+				57C8DDD72359B0D800978EFE /* SetTrackingKPI.swift in Sources */,
 				5774BE8F233484990023DCCF /* AnimatedFieldFormat.swift in Sources */,
 				57B342F42334D03F0011C790 /* KeyboardAvoiding.swift in Sources */,
+				57C8DDDB2359C3CF00978EFE /* UserRegistrationViewController.swift in Sources */,
 				5774BE92233484990023DCCF /* AnimatedField.swift in Sources */,
 				570353F22354A48F0098C9DA /* SetKPIViewController.swift in Sources */,
 				57B3430A2334E1EA0011C790 /* AddPlayerProfileViewController.swift in Sources */,
 				57B343072334DD240011C790 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				5774BE95233484990023DCCF /* String+RegEx.swift in Sources */,
 				5774BE94233484990023DCCF /* Date+Format.swift in Sources */,
+				57121DBC23570D1F005F125E /* ActiveTrackingViewController.swift in Sources */,
 				5774BE98233484990023DCCF /* AnimatedFieldType.swift in Sources */,
 				5774BE9C233484990023DCCF /* AnimatedField+UIPickerViewDelegate.swift in Sources */,
+				57C8DDDE2359CA6A00978EFE /* DashboardVC.swift in Sources */,
 				57B343082334DD240011C790 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				57B343062334DD240011C790 /* TPKeyboardAvoidingTableView.m in Sources */,
 				57B343052334DD240011C790 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				57121DB923570C57005F125E /* TrackingViewController.swift in Sources */,
 				5774BE51233482000023DCCF /* ViewController.swift in Sources */,
 				57B342F52334D03F0011C790 /* KeyboardDismissingView.swift in Sources */,
 				5774BE9A233484990023DCCF /* AnimatedFieldAlertPosition.swift in Sources */,
 				5774BE91233484990023DCCF /* AnimatedField+TextFieldDelegate.swift in Sources */,
 				57B342F82334D6D30011C790 /* MJMaterialSwitch.swift in Sources */,
+				57C8DDE12359CAB500978EFE /* AddPlayerController.swift in Sources */,
 				570353EA235483450098C9DA /* MyTeamsCustomCell.swift in Sources */,
 				57B342FB2334D9BC0011C790 /* IBDesignables.swift in Sources */,
 				570353EF23548C150098C9DA /* AddTeamProfileViewController.swift in Sources */,
@@ -421,6 +517,14 @@
 				5774BE582334820D0023DCCF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		57C8DDCD23597E5B00978EFE /* Coach.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57C8DDCE23597E5B00978EFE /* Base */,
+			);
+			name = Coach.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

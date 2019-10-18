@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 enum ComicSansMS {
@@ -21,6 +22,16 @@ enum ComicSansMS {
         case .Regular: return "ComicSansMS"
         case .BoldItalic: return "ComicSansMS-BoldItalic"
         case .Italic: return "ComicSansMS-Italic"
+        }
+    }
+}
+
+
+enum Storyboards {
+    case Coach
+    var rawValue: UIStoryboard {
+        switch  self {
+        case .Coach: return UIStoryboard(name: "Coach", bundle: nil)
         }
     }
 }
