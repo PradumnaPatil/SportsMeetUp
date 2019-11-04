@@ -10,18 +10,20 @@ import Foundation
 import UIKit
 
 
-enum ComicSansMS {
+enum Montserrat {
     case Bold
     case Regular
     case BoldItalic
     case Italic
-    
+    case Medium
+
     var rawValue: String {
         switch  self {
-        case .Bold: return "ComicSansMS-Bold"
-        case .Regular: return "ComicSansMS"
-        case .BoldItalic: return "ComicSansMS-BoldItalic"
-        case .Italic: return "ComicSansMS-Italic"
+        case .Bold: return "Montserrat-Bold"
+        case .Regular: return "Montserrat-Regular"
+        case .BoldItalic: return "Montserrat-BoldItalic"
+        case .Italic: return "Montserrat-Italic"
+        case .Medium: return "Montserrat-Medium"
         }
     }
 }

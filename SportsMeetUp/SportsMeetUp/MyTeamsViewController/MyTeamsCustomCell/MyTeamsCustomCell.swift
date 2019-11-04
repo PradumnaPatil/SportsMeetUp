@@ -11,6 +11,7 @@ import UIKit
 class MyTeamsCustomCell: UITableViewCell {
 
     @IBOutlet weak var lblTeamTitle: UILabel!
+    @IBOutlet weak var btnCheckmark: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -23,8 +23,8 @@ class ViewController: UIViewController {
         txtFirstName.applyPropertiesToTextfield(tag: 1, isSecure: false, type: .username(4, 10), isLowercased: true, placeholder: "Coach firstname", controller: self, keyboardType: .default)
         txtLastName.applyPropertiesToTextfield(tag: 2, isSecure: false, type: .username(4, 10), isLowercased: true, placeholder: "Coach lastname", controller: self, keyboardType: .default)
         txtEmail.applyPropertiesToTextfield(tag: 3, isSecure: false, type: .email, isLowercased: true, placeholder: "Coach Email", controller: self, keyboardType: .default)
-        txtPassword.applyPropertiesToTextfield(tag: 4, isSecure: true, type: .password(4, 10), isLowercased: true, placeholder: "Password", controller: self, keyboardType: .default)
-        txtConfirmPassword.applyPropertiesToTextfield(tag: 5, isSecure: true, type: .password(4, 10), isLowercased: true, placeholder: "Confirm password", controller: self, keyboardType: .default)
+        txtPassword.applyPropertiesToTextfield(tag: 4, isSecure: true, type: .password(7, 16), isLowercased: true, placeholder: "Create Password", controller: self, keyboardType: .default)
+        txtConfirmPassword.applyPropertiesToTextfield(tag: 5, isSecure: true, type: .password(7, 16), isLowercased: true, placeholder: "Confirm password", controller: self, keyboardType: .default)
         txtClubName.applyPropertiesToTextfield(tag: 2, isSecure: false, type: .username(4, 10), isLowercased: true, placeholder: "Club Name", controller: self, keyboardType: .default)
 
         
@@ -39,12 +39,12 @@ extension AnimatedField {
     func applyPropertiesToTextfield(tag:Int, isSecure:Bool, type:AnimatedFieldType, isLowercased:Bool, placeholder:String, controller:UIViewController, keyboardType:UIKeyboardType) {
         
         var format = AnimatedFieldFormat()
-        format.titleFont = UIFont(name: ComicSansMS.Regular.rawValue, size: 14)!
-        format.textFont = UIFont(name: ComicSansMS.Regular.rawValue, size: 16)!
+        format.titleFont = UIFont(name: Montserrat.Medium.rawValue, size: 14)!
+        format.textFont = UIFont(name: Montserrat.Medium.rawValue, size: 16)!
         format.alertColor = .red
         format.alertFieldActive = false
         format.titleAlwaysVisible = true
-        format.alertFont = UIFont(name: ComicSansMS.Regular.rawValue, size: 16)!
+        format.alertFont = UIFont(name: Montserrat.Medium.rawValue, size: 16)!
         
         self.format = format
         self.placeholder = placeholder

@@ -28,7 +28,7 @@ class AddTeamProfileViewController: UIViewController {
         
         txtAgeGroup.applyPropertiesToTextfield(tag: 1, isSecure: false, type: .price(45, 2), isLowercased: true, placeholder: "Age Group", controller: self, keyboardType: .numberPad)
 
-        txtSelectSport.applyPropertiesToTextfield(tag: 2, isSecure: false, type: .username(4, 10), isLowercased: true, placeholder: "Enter Sport", controller: self, keyboardType: .default)
+        txtSelectSport.applyPropertiesToTextfield(tag: 2, isSecure: false, type: .username(4, 10), isLowercased: true, placeholder: "Sport", controller: self, keyboardType: .default)
 
         agePicker.delegate = self
         agePicker.dataSource = self

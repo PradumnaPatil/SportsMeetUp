@@ -8,6 +8,13 @@
 
 import UIKit
 
+struct Statistics {
+    
+    var title:String
+    var isSelected:Bool
+}
+
+
 class SetKPIViewController: UIViewController {
 
     
@@ -18,7 +25,7 @@ class SetKPIViewController: UIViewController {
     let arrPositionArray = ["Goalkeeper", "Full-backs", "Centre-Backs", "Sweeper", "Central Midfield", "Wide Midfield", "Striker", "Behind the Striker"]
     let arrPlayerArray = ["David Beckham", "Reggie Bush", "Tony Romo", "Diego Maradona", "Wayne Rooney", "Vyacheslav Malafeev", "Ian Roberts", "Justin Fashanu", "Zinedine Zidane", "Luís Figo", "Paris Jackson"]
     let arrSportArray = ["Football", "Cricket", "Baseball", "Basketball", "Tennis", "Badminton"]
-    var arrStatistics = ["Statistics1", "Statistics2", "Statistics3", "Statistics4", "Statistics5", "Statistics6", "Statistics7", "Statistics8", "Statistics9", "Statistics10", ]
+    var arrStatistics:[Statistics] = [Statistics(title: "Statistics1", isSelected: false), Statistics(title: "Statistics2", isSelected: false), Statistics(title: "Statistics3", isSelected: false), Statistics(title: "Statistics4", isSelected: false), Statistics(title: "Statistics5", isSelected: false)]//["Statistics1", "Statistics2", "Statistics3", "Statistics4", "Statistics5", "Statistics6", "Statistics7", "Statistics8", "Statistics9", "Statistics10", ]
 
     
     let positionPicker = UIPickerView()
@@ -57,20 +64,20 @@ class SetKPIViewController: UIViewController {
 
         let cancelButton = UIButton()
         cancelButton.sizeToFit()
-        cancelButton.titleLabel?.font = UIFont(name: ComicSansMS.Regular.rawValue, size: 14)
+        cancelButton.titleLabel?.font = UIFont(name: Montserrat.Medium.rawValue, size: 14)
         cancelButton.setTitleColor(.black, for: .normal)
         cancelButton.setTitle("Cancel", for: .normal)
         cancelButton.addTarget(self, action: #selector(cancelButtonClicked), for: .touchUpInside)
-        cancelButton.titleLabel?.font = UIFont(name: ComicSansMS.Regular.rawValue, size: 13)
+        cancelButton.titleLabel?.font = UIFont(name: Montserrat.Medium.rawValue, size: 13)
         let leftItem = UIBarButtonItem(customView: cancelButton)
         
         let doneButton = UIButton()
         doneButton.sizeToFit()
         doneButton.setTitleColor(.black, for: .normal)
-        doneButton.titleLabel?.font = UIFont(name: ComicSansMS.Regular.rawValue, size: 14)
+        doneButton.titleLabel?.font = UIFont(name: Montserrat.Medium.rawValue, size: 14)
         doneButton.setTitle("Done", for: .normal)
         doneButton.addTarget(self, action: #selector(doneButtonClicked), for: .touchUpInside)
-        doneButton.titleLabel?.font = UIFont(name: ComicSansMS.Regular.rawValue, size: 13)
+        doneButton.titleLabel?.font = UIFont(name: Montserrat.Medium.rawValue, size: 13)
         let rightItem = UIBarButtonItem(customView: doneButton)
         
         var items = [UIBarButtonItem]()
@@ -138,11 +145,15 @@ extension SetKPIViewController:UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let myTeamsCustomCell = tableView.dequeueReusableCell(withIdentifier: "MyTeamsCustomCell") as! MyTeamsCustomCell
-        myTeamsCustomCell.lblTeamTitle.text = "\(arrStatistics[indexPath.row])"
+        let statistics = arrStatistics[indexPath.row]
+        myTeamsCustomCell.lblTeamTitle.text = "\(statistics.title)"
+        myTeamsCustomCell.btnCheckmark.isSelected = statistics.isSelected
         return myTeamsCustomCell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        arrStatistics[indexPath.row].isSelected = !arrStatistics[indexPath.row].isSelected
+        tblViewStatistics.reloadData()
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 40

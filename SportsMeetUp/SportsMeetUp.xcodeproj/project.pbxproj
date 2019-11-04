@@ -14,6 +14,9 @@
 		570353F22354A48F0098C9DA /* SetKPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570353F12354A48F0098C9DA /* SetKPIViewController.swift */; };
 		57121DB923570C57005F125E /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57121DB823570C57005F125E /* TrackingViewController.swift */; };
 		57121DBC23570D1F005F125E /* ActiveTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57121DBB23570D1F005F125E /* ActiveTrackingViewController.swift */; };
+		571A84C72367065800106D9A /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A84C62367065800106D9A /* TermsAndConditionsViewController.swift */; };
+		576198342369464400E425BA /* LoginViewontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576198332369464400E425BA /* LoginViewontroller.swift */; };
+		5761983723694D3600E425BA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761983623694D3600E425BA /* GameViewController.swift */; };
 		5774BE4F233482000023DCCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5774BE4E233482000023DCCF /* AppDelegate.swift */; };
 		5774BE51233482000023DCCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5774BE50233482000023DCCF /* ViewController.swift */; };
 		5774BE54233482000023DCCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5774BE52233482000023DCCF /* Main.storyboard */; };
@@ -50,6 +53,25 @@
 		57B343072334DD240011C790 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B343012334DD240011C790 /* TPKeyboardAvoidingScrollView.m */; };
 		57B343082334DD240011C790 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B343032334DD240011C790 /* TPKeyboardAvoidingCollectionView.m */; };
 		57B3430A2334E1EA0011C790 /* AddPlayerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B343092334E1EA0011C790 /* AddPlayerProfileViewController.swift */; };
+		57BE641B236810EA00E8681A /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE6408236810EA00E8681A /* Montserrat-LightItalic.ttf */; };
+		57BE641C236810EA00E8681A /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE6409236810EA00E8681A /* Montserrat-Medium.ttf */; };
+		57BE641D236810EA00E8681A /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE640A236810EA00E8681A /* Montserrat-BoldItalic.ttf */; };
+		57BE641E236810EA00E8681A /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE640B236810EA00E8681A /* Montserrat-Light.ttf */; };
+		57BE641F236810EA00E8681A /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE640C236810EA00E8681A /* Montserrat-ThinItalic.ttf */; };
+		57BE6420236810EA00E8681A /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE640D236810EA00E8681A /* Montserrat-ExtraLight.ttf */; };
+		57BE6421236810EA00E8681A /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE640E236810EA00E8681A /* Montserrat-Thin.ttf */; };
+		57BE6422236810EA00E8681A /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE640F236810EA00E8681A /* Montserrat-Bold.ttf */; };
+		57BE6423236810EA00E8681A /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE6410236810EA00E8681A /* Montserrat-MediumItalic.ttf */; };
+		57BE6424236810EA00E8681A /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE6411236810EA00E8681A /* Montserrat-BlackItalic.ttf */; };
+		57BE6425236810EA00E8681A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE6412236810EA00E8681A /* Montserrat-SemiBold.ttf */; };
+		57BE6426236810EA00E8681A /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE6413236810EA00E8681A /* Montserrat-ExtraLightItalic.ttf */; };
+		57BE6427236810EA00E8681A /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE6414236810EA00E8681A /* Montserrat-ExtraBold.ttf */; };
+		57BE6428236810EA00E8681A /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 57BE6415236810EA00E8681A /* OFL.txt */; };
+		57BE6429236810EA00E8681A /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE6416236810EA00E8681A /* Montserrat-Black.ttf */; };
+		57BE642A236810EA00E8681A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE6417236810EA00E8681A /* Montserrat-Regular.ttf */; };
+		57BE642B236810EA00E8681A /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE6418236810EA00E8681A /* Montserrat-Italic.ttf */; };
+		57BE642C236810EA00E8681A /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE6419236810EA00E8681A /* Montserrat-SemiBoldItalic.ttf */; };
+		57BE642D236810EA00E8681A /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE641A236810EA00E8681A /* Montserrat-ExtraBoldItalic.ttf */; };
 		57C8DDCF23597E5B00978EFE /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C8DDCD23597E5B00978EFE /* Coach.storyboard */; };
 		57C8DDD423598D2800978EFE /* SoccerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C8DDD323598D2800978EFE /* SoccerVC.swift */; };
 		57C8DDD72359B0D800978EFE /* SetTrackingKPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C8DDD62359B0D800978EFE /* SetTrackingKPI.swift */; };
@@ -66,6 +88,9 @@
 		570353F12354A48F0098C9DA /* SetKPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetKPIViewController.swift; sourceTree = "<group>"; };
 		57121DB823570C57005F125E /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
 		57121DBB23570D1F005F125E /* ActiveTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTrackingViewController.swift; sourceTree = "<group>"; };
+		571A84C62367065800106D9A /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
+		576198332369464400E425BA /* LoginViewontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewontroller.swift; sourceTree = "<group>"; };
+		5761983623694D3600E425BA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		5774BE4B233482000023DCCF /* SportsMeetUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsMeetUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5774BE4E233482000023DCCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5774BE50233482000023DCCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +133,25 @@
 		57B343032334DD240011C790 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		57B343042334DD240011C790 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
 		57B343092334E1EA0011C790 /* AddPlayerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerProfileViewController.swift; sourceTree = "<group>"; };
+		57BE6408236810EA00E8681A /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		57BE6409236810EA00E8681A /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		57BE640A236810EA00E8681A /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		57BE640B236810EA00E8681A /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		57BE640C236810EA00E8681A /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		57BE640D236810EA00E8681A /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		57BE640E236810EA00E8681A /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		57BE640F236810EA00E8681A /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		57BE6410236810EA00E8681A /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		57BE6411236810EA00E8681A /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		57BE6412236810EA00E8681A /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		57BE6413236810EA00E8681A /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		57BE6414236810EA00E8681A /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		57BE6415236810EA00E8681A /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		57BE6416236810EA00E8681A /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		57BE6417236810EA00E8681A /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		57BE6418236810EA00E8681A /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		57BE6419236810EA00E8681A /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		57BE641A236810EA00E8681A /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		57C8DDCE23597E5B00978EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SportsMeetUp/Base.lproj/Coach.storyboard; sourceTree = "<group>"; };
 		57C8DDD323598D2800978EFE /* SoccerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoccerVC.swift; sourceTree = "<group>"; };
 		57C8DDD62359B0D800978EFE /* SetTrackingKPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTrackingKPI.swift; sourceTree = "<group>"; };
@@ -176,6 +220,30 @@
 			path = ActiveTrackingViewController;
 			sourceTree = "<group>";
 		};
+		571A84C52367063C00106D9A /* TermsAndConditionsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				571A84C62367065800106D9A /* TermsAndConditionsViewController.swift */,
+			);
+			path = TermsAndConditionsViewController;
+			sourceTree = "<group>";
+		};
+		576198322369463500E425BA /* LoginViewontroller */ = {
+			isa = PBXGroup;
+			children = (
+				576198332369464400E425BA /* LoginViewontroller.swift */,
+			);
+			path = LoginViewontroller;
+			sourceTree = "<group>";
+		};
+		5761983523694D2900E425BA /* GameViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5761983623694D3600E425BA /* GameViewController.swift */,
+			);
+			path = GameViewController;
+			sourceTree = "<group>";
+		};
 		5774BE42233481FF0023DCCF = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +269,8 @@
 				5774BE4E233482000023DCCF /* AppDelegate.swift */,
 				5774BE50233482000023DCCF /* ViewController.swift */,
 				57B343092334E1EA0011C790 /* AddPlayerProfileViewController.swift */,
+				5761983523694D2900E425BA /* GameViewController */,
+				576198322369463500E425BA /* LoginViewontroller */,
 				57C8DDDC2359CA6A00978EFE /* DashboardController */,
 				57C8DDD82359C3A800978EFE /* Player Flow */,
 				57C8DDD52359B0D800978EFE /* SetTrackingKPI */,
@@ -279,13 +349,8 @@
 		57B342CC2334CF0C0011C790 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				57B342CD2334CF0C0011C790 /* comici.ttf */,
-				57B342CE2334CF0C0011C790 /* comicz.ttf */,
-				57B342CF2334CF0C0011C790 /* ComicSansMS3.ttf */,
-				57B342D02334CF0C0011C790 /* COMIC.TTF */,
-				57B342D12334CF0C0011C790 /* design.graffiti.comicsansms.ttf */,
-				57B342D22334CF0C0011C790 /* design.graffiti.comicsansmsgras.ttf */,
-				57B342D32334CF0C0011C790 /* sharefonts.net.txt */,
+				57BE6407236810EA00E8681A /* Montserrat */,
+				57BE6406236810D900E8681A /* Comic Sans */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -331,6 +396,46 @@
 			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
+		57BE6406236810D900E8681A /* Comic Sans */ = {
+			isa = PBXGroup;
+			children = (
+				57B342CD2334CF0C0011C790 /* comici.ttf */,
+				57B342CE2334CF0C0011C790 /* comicz.ttf */,
+				57B342CF2334CF0C0011C790 /* ComicSansMS3.ttf */,
+				57B342D02334CF0C0011C790 /* COMIC.TTF */,
+				57B342D12334CF0C0011C790 /* design.graffiti.comicsansms.ttf */,
+				57B342D22334CF0C0011C790 /* design.graffiti.comicsansmsgras.ttf */,
+				57B342D32334CF0C0011C790 /* sharefonts.net.txt */,
+			);
+			path = "Comic Sans";
+			sourceTree = "<group>";
+		};
+		57BE6407236810EA00E8681A /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				57BE6408236810EA00E8681A /* Montserrat-LightItalic.ttf */,
+				57BE6409236810EA00E8681A /* Montserrat-Medium.ttf */,
+				57BE640A236810EA00E8681A /* Montserrat-BoldItalic.ttf */,
+				57BE640B236810EA00E8681A /* Montserrat-Light.ttf */,
+				57BE640C236810EA00E8681A /* Montserrat-ThinItalic.ttf */,
+				57BE640D236810EA00E8681A /* Montserrat-ExtraLight.ttf */,
+				57BE640E236810EA00E8681A /* Montserrat-Thin.ttf */,
+				57BE640F236810EA00E8681A /* Montserrat-Bold.ttf */,
+				57BE6410236810EA00E8681A /* Montserrat-MediumItalic.ttf */,
+				57BE6411236810EA00E8681A /* Montserrat-BlackItalic.ttf */,
+				57BE6412236810EA00E8681A /* Montserrat-SemiBold.ttf */,
+				57BE6413236810EA00E8681A /* Montserrat-ExtraLightItalic.ttf */,
+				57BE6414236810EA00E8681A /* Montserrat-ExtraBold.ttf */,
+				57BE6415236810EA00E8681A /* OFL.txt */,
+				57BE6416236810EA00E8681A /* Montserrat-Black.ttf */,
+				57BE6417236810EA00E8681A /* Montserrat-Regular.ttf */,
+				57BE6418236810EA00E8681A /* Montserrat-Italic.ttf */,
+				57BE6419236810EA00E8681A /* Montserrat-SemiBoldItalic.ttf */,
+				57BE641A236810EA00E8681A /* Montserrat-ExtraBoldItalic.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
 		57C8DDD223598D2800978EFE /* SoccerController */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,6 +464,7 @@
 		57C8DDD92359C3B900978EFE /* UserRegistrationViewController */ = {
 			isa = PBXGroup;
 			children = (
+				571A84C52367063C00106D9A /* TermsAndConditionsViewController */,
 				57C8DDDA2359C3CF00978EFE /* UserRegistrationViewController.swift */,
 			);
 			path = UserRegistrationViewController;
@@ -438,19 +544,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57BE6423236810EA00E8681A /* Montserrat-MediumItalic.ttf in Resources */,
+				57BE6429236810EA00E8681A /* Montserrat-Black.ttf in Resources */,
+				57BE6420236810EA00E8681A /* Montserrat-ExtraLight.ttf in Resources */,
+				57BE6426236810EA00E8681A /* Montserrat-ExtraLightItalic.ttf in Resources */,
 				57B342D42334CF0D0011C790 /* comici.ttf in Resources */,
+				57BE641C236810EA00E8681A /* Montserrat-Medium.ttf in Resources */,
+				57BE641E236810EA00E8681A /* Montserrat-Light.ttf in Resources */,
 				57B342D52334CF0D0011C790 /* comicz.ttf in Resources */,
+				57BE6425236810EA00E8681A /* Montserrat-SemiBold.ttf in Resources */,
 				5774BE9B233484990023DCCF /* AnimatedField.xib in Resources */,
+				57BE6424236810EA00E8681A /* Montserrat-BlackItalic.ttf in Resources */,
 				5774BE592334820D0023DCCF /* LaunchScreen.storyboard in Resources */,
 				57B342D92334CF0D0011C790 /* design.graffiti.comicsansmsgras.ttf in Resources */,
+				57BE6428236810EA00E8681A /* OFL.txt in Resources */,
 				5774BE562334820D0023DCCF /* Assets.xcassets in Resources */,
+				57BE642B236810EA00E8681A /* Montserrat-Italic.ttf in Resources */,
 				57B342DA2334CF0D0011C790 /* sharefonts.net.txt in Resources */,
+				57BE642D236810EA00E8681A /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				57BE6421236810EA00E8681A /* Montserrat-Thin.ttf in Resources */,
+				57BE641D236810EA00E8681A /* Montserrat-BoldItalic.ttf in Resources */,
 				57B342D72334CF0D0011C790 /* COMIC.TTF in Resources */,
+				57BE641B236810EA00E8681A /* Montserrat-LightItalic.ttf in Resources */,
 				57C8DDCF23597E5B00978EFE /* Coach.storyboard in Resources */,
 				5774BE54233482000023DCCF /* Main.storyboard in Resources */,
+				57BE642C236810EA00E8681A /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				57BE641F236810EA00E8681A /* Montserrat-ThinItalic.ttf in Resources */,
+				57BE6427236810EA00E8681A /* Montserrat-ExtraBold.ttf in Resources */,
+				57BE642A236810EA00E8681A /* Montserrat-Regular.ttf in Resources */,
 				57B342D82334CF0D0011C790 /* design.graffiti.comicsansms.ttf in Resources */,
 				5774BE90233484990023DCCF /* .gitkeep in Resources */,
 				57B342D62334CF0D0011C790 /* ComicSansMS3.ttf in Resources */,
+				57BE6422236810EA00E8681A /* Montserrat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +590,8 @@
 				57C8DDD423598D2800978EFE /* SoccerVC.swift in Sources */,
 				5774BE96233484990023DCCF /* UIView+Shake.swift in Sources */,
 				57C8DDD72359B0D800978EFE /* SetTrackingKPI.swift in Sources */,
+				5761983723694D3600E425BA /* GameViewController.swift in Sources */,
+				576198342369464400E425BA /* LoginViewontroller.swift in Sources */,
 				5774BE8F233484990023DCCF /* AnimatedFieldFormat.swift in Sources */,
 				57B342F42334D03F0011C790 /* KeyboardAvoiding.swift in Sources */,
 				57C8DDDB2359C3CF00978EFE /* UserRegistrationViewController.swift in Sources */,
@@ -481,6 +608,7 @@
 				57B343082334DD240011C790 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				57B343062334DD240011C790 /* TPKeyboardAvoidingTableView.m in Sources */,
 				57B343052334DD240011C790 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				571A84C72367065800106D9A /* TermsAndConditionsViewController.swift in Sources */,
 				57121DB923570C57005F125E /* TrackingViewController.swift in Sources */,
 				5774BE51233482000023DCCF /* ViewController.swift in Sources */,
 				57B342F52334D03F0011C790 /* KeyboardDismissingView.swift in Sources */,

@@ -26,7 +26,7 @@ class MyTeamsViewController: UIViewController {
         longTitleLabel.setTitleColor(.black, for: .normal)
         longTitleLabel.setTitle("Add Team", for: .normal)
         longTitleLabel.addTarget(self, action: #selector(btnAddTeamClicked), for: .touchUpInside)
-        longTitleLabel.titleLabel?.font = UIFont(name: ComicSansMS.Regular.rawValue, size: 16)
+        longTitleLabel.titleLabel?.font = UIFont(name: Montserrat.Medium.rawValue, size: 16)
         let rightItem = UIBarButtonItem(customView: longTitleLabel)
         self.navigationItem.rightBarButtonItem = rightItem
     }
