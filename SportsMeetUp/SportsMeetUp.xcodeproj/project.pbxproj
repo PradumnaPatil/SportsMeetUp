@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06656DEE23703E2B000392DD /* ActiveTrackingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06656DED23703E2B000392DD /* ActiveTrackingVC.swift */; };
+		06656DF1237049F4000392DD /* ActiveTrackingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06656DF0237049F4000392DD /* ActiveTrackingCollectionCell.swift */; };
 		570353E6235481560098C9DA /* MyTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570353E5235481560098C9DA /* MyTeamsViewController.swift */; };
 		570353EA235483450098C9DA /* MyTeamsCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570353E9235483450098C9DA /* MyTeamsCustomCell.swift */; };
 		570353EC23548B5D0098C9DA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570353EB23548B5D0098C9DA /* Constants.swift */; };
@@ -81,6 +83,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06656DED23703E2B000392DD /* ActiveTrackingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTrackingVC.swift; sourceTree = "<group>"; };
+		06656DF0237049F4000392DD /* ActiveTrackingCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTrackingCollectionCell.swift; sourceTree = "<group>"; };
 		570353E5235481560098C9DA /* MyTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamsViewController.swift; sourceTree = "<group>"; };
 		570353E9235483450098C9DA /* MyTeamsCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamsCustomCell.swift; sourceTree = "<group>"; };
 		570353EB23548B5D0098C9DA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -171,6 +175,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06656DEC23703E01000392DD /* ActiveTrackingController */ = {
+			isa = PBXGroup;
+			children = (
+				06656DEF23704983000392DD /* ActiveTrackingCollectionCell */,
+				06656DED23703E2B000392DD /* ActiveTrackingVC.swift */,
+			);
+			path = ActiveTrackingController;
+			sourceTree = "<group>";
+		};
+		06656DEF23704983000392DD /* ActiveTrackingCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				06656DF0237049F4000392DD /* ActiveTrackingCollectionCell.swift */,
+			);
+			path = ActiveTrackingCollectionCell;
+			sourceTree = "<group>";
+		};
 		570353E7235482E30098C9DA /* MyTeamsViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +290,7 @@
 				5774BE4E233482000023DCCF /* AppDelegate.swift */,
 				5774BE50233482000023DCCF /* ViewController.swift */,
 				57B343092334E1EA0011C790 /* AddPlayerProfileViewController.swift */,
+				06656DEC23703E01000392DD /* ActiveTrackingController */,
 				5761983523694D2900E425BA /* GameViewController */,
 				576198322369463500E425BA /* LoginViewontroller */,
 				57C8DDDC2359CA6A00978EFE /* DashboardController */,
@@ -603,6 +625,8 @@
 				5774BE94233484990023DCCF /* Date+Format.swift in Sources */,
 				57121DBC23570D1F005F125E /* ActiveTrackingViewController.swift in Sources */,
 				5774BE98233484990023DCCF /* AnimatedFieldType.swift in Sources */,
+				06656DF1237049F4000392DD /* ActiveTrackingCollectionCell.swift in Sources */,
+				06656DEE23703E2B000392DD /* ActiveTrackingVC.swift in Sources */,
 				5774BE9C233484990023DCCF /* AnimatedField+UIPickerViewDelegate.swift in Sources */,
 				57C8DDDE2359CA6A00978EFE /* DashboardVC.swift in Sources */,
 				57B343082334DD240011C790 /* TPKeyboardAvoidingCollectionView.m in Sources */,
