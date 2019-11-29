@@ -17,6 +17,8 @@
 		57121DB923570C57005F125E /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57121DB823570C57005F125E /* TrackingViewController.swift */; };
 		57121DBC23570D1F005F125E /* ActiveTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57121DBB23570D1F005F125E /* ActiveTrackingViewController.swift */; };
 		571A84C72367065800106D9A /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A84C62367065800106D9A /* TermsAndConditionsViewController.swift */; };
+		573717CA2383E0D7004DFC79 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573717C92383E0D7004DFC79 /* SummaryViewController.swift */; };
+		573717CD2383E473004DFC79 /* VideoTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573717CC2383E473004DFC79 /* VideoTrackingViewController.swift */; };
 		576198342369464400E425BA /* LoginViewontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576198332369464400E425BA /* LoginViewontroller.swift */; };
 		5761983723694D3600E425BA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761983623694D3600E425BA /* GameViewController.swift */; };
 		5774BE4F233482000023DCCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5774BE4E233482000023DCCF /* AppDelegate.swift */; };
@@ -39,6 +41,8 @@
 		5774BE9B233484990023DCCF /* AnimatedField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5774BE8A233484990023DCCF /* AnimatedField.xib */; };
 		5774BE9C233484990023DCCF /* AnimatedField+UIPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5774BE8B233484990023DCCF /* AnimatedField+UIPickerViewDelegate.swift */; };
 		5774BE9D233484990023DCCF /* AnimatedField+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5774BE8C233484990023DCCF /* AnimatedField+Protocols.swift */; };
+		57AA4B552371C3E800BA761B /* ProfileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AA4B542371C3E800BA761B /* ProfileListViewController.swift */; };
+		57AA4B582371C51D00BA761B /* ProfileListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AA4B572371C51D00BA761B /* ProfileListCell.swift */; };
 		57B342D42334CF0D0011C790 /* comici.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57B342CD2334CF0C0011C790 /* comici.ttf */; };
 		57B342D52334CF0D0011C790 /* comicz.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57B342CE2334CF0C0011C790 /* comicz.ttf */; };
 		57B342D62334CF0D0011C790 /* ComicSansMS3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57B342CF2334CF0C0011C790 /* ComicSansMS3.ttf */; };
@@ -55,6 +59,8 @@
 		57B343072334DD240011C790 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B343012334DD240011C790 /* TPKeyboardAvoidingScrollView.m */; };
 		57B343082334DD240011C790 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B343032334DD240011C790 /* TPKeyboardAvoidingCollectionView.m */; };
 		57B3430A2334E1EA0011C790 /* AddPlayerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B343092334E1EA0011C790 /* AddPlayerProfileViewController.swift */; };
+		57B6019A2387DCA8006B14EC /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B601992387DCA8006B14EC /* Player.storyboard */; };
+		57B86675237510CF0058614E /* PlayerHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B86674237510CF0058614E /* PlayerHistoryViewController.swift */; };
 		57BE641B236810EA00E8681A /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE6408236810EA00E8681A /* Montserrat-LightItalic.ttf */; };
 		57BE641C236810EA00E8681A /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE6409236810EA00E8681A /* Montserrat-Medium.ttf */; };
 		57BE641D236810EA00E8681A /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BE640A236810EA00E8681A /* Montserrat-BoldItalic.ttf */; };
@@ -93,6 +99,8 @@
 		57121DB823570C57005F125E /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
 		57121DBB23570D1F005F125E /* ActiveTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTrackingViewController.swift; sourceTree = "<group>"; };
 		571A84C62367065800106D9A /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
+		573717C92383E0D7004DFC79 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		573717CC2383E473004DFC79 /* VideoTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTrackingViewController.swift; sourceTree = "<group>"; };
 		576198332369464400E425BA /* LoginViewontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewontroller.swift; sourceTree = "<group>"; };
 		5761983623694D3600E425BA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		5774BE4B233482000023DCCF /* SportsMeetUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsMeetUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +125,8 @@
 		5774BE8A233484990023DCCF /* AnimatedField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimatedField.xib; sourceTree = "<group>"; };
 		5774BE8B233484990023DCCF /* AnimatedField+UIPickerViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimatedField+UIPickerViewDelegate.swift"; sourceTree = "<group>"; };
 		5774BE8C233484990023DCCF /* AnimatedField+Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimatedField+Protocols.swift"; sourceTree = "<group>"; };
+		57AA4B542371C3E800BA761B /* ProfileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListViewController.swift; sourceTree = "<group>"; };
+		57AA4B572371C51D00BA761B /* ProfileListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListCell.swift; sourceTree = "<group>"; };
 		57B342CD2334CF0C0011C790 /* comici.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comici.ttf; sourceTree = "<group>"; };
 		57B342CE2334CF0C0011C790 /* comicz.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comicz.ttf; sourceTree = "<group>"; };
 		57B342CF2334CF0C0011C790 /* ComicSansMS3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ComicSansMS3.ttf; sourceTree = "<group>"; };
@@ -137,6 +147,8 @@
 		57B343032334DD240011C790 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		57B343042334DD240011C790 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
 		57B343092334E1EA0011C790 /* AddPlayerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerProfileViewController.swift; sourceTree = "<group>"; };
+		57B601992387DCA8006B14EC /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
+		57B86674237510CF0058614E /* PlayerHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerHistoryViewController.swift; sourceTree = "<group>"; };
 		57BE6408236810EA00E8681A /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
 		57BE6409236810EA00E8681A /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		57BE640A236810EA00E8681A /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -249,6 +261,22 @@
 			path = TermsAndConditionsViewController;
 			sourceTree = "<group>";
 		};
+		573717C82383E0AF004DFC79 /* SummaryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				573717C92383E0D7004DFC79 /* SummaryViewController.swift */,
+			);
+			path = SummaryViewController;
+			sourceTree = "<group>";
+		};
+		573717CB2383E462004DFC79 /* VideoTrackingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				573717CC2383E473004DFC79 /* VideoTrackingViewController.swift */,
+			);
+			path = VideoTrackingViewController;
+			sourceTree = "<group>";
+		};
 		576198322369463500E425BA /* LoginViewontroller */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +318,9 @@
 				5774BE4E233482000023DCCF /* AppDelegate.swift */,
 				5774BE50233482000023DCCF /* ViewController.swift */,
 				57B343092334E1EA0011C790 /* AddPlayerProfileViewController.swift */,
+				573717CB2383E462004DFC79 /* VideoTrackingViewController */,
+				57B86673237510B80058614E /* PlayerHistoryViewController */,
+				57AA4B532371C38700BA761B /* ProfileListViewController */,
 				06656DEC23703E01000392DD /* ActiveTrackingController */,
 				5761983523694D2900E425BA /* GameViewController */,
 				576198322369463500E425BA /* LoginViewontroller */,
@@ -303,6 +334,7 @@
 				570353ED23548BF90098C9DA /* AddTeamProfileViewController */,
 				570353E7235482E30098C9DA /* MyTeamsViewController */,
 				5774BE52233482000023DCCF /* Main.storyboard */,
+				57B601992387DCA8006B14EC /* Player.storyboard */,
 				57C8DDCD23597E5B00978EFE /* Coach.storyboard */,
 				5774BE552334820D0023DCCF /* Assets.xcassets */,
 				5774BE572334820D0023DCCF /* LaunchScreen.storyboard */,
@@ -368,6 +400,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		57AA4B532371C38700BA761B /* ProfileListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				57AA4B562371C50300BA761B /* ProfileListCell */,
+				57AA4B542371C3E800BA761B /* ProfileListViewController.swift */,
+			);
+			path = ProfileListViewController;
+			sourceTree = "<group>";
+		};
+		57AA4B562371C50300BA761B /* ProfileListCell */ = {
+			isa = PBXGroup;
+			children = (
+				57AA4B572371C51D00BA761B /* ProfileListCell.swift */,
+			);
+			path = ProfileListCell;
+			sourceTree = "<group>";
+		};
 		57B342CC2334CF0C0011C790 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,6 +465,15 @@
 				57B343042334DD240011C790 /* TPKeyboardAvoidingTableView.h */,
 			);
 			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		57B86673237510B80058614E /* PlayerHistoryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				57B86674237510CF0058614E /* PlayerHistoryViewController.swift */,
+				573717C82383E0AF004DFC79 /* SummaryViewController */,
+			);
+			path = PlayerHistoryViewController;
 			sourceTree = "<group>";
 		};
 		57BE6406236810D900E8681A /* Comic Sans */ = {
@@ -595,6 +653,7 @@
 				57BE6427236810EA00E8681A /* Montserrat-ExtraBold.ttf in Resources */,
 				57BE642A236810EA00E8681A /* Montserrat-Regular.ttf in Resources */,
 				57B342D82334CF0D0011C790 /* design.graffiti.comicsansms.ttf in Resources */,
+				57B6019A2387DCA8006B14EC /* Player.storyboard in Resources */,
 				5774BE90233484990023DCCF /* .gitkeep in Resources */,
 				57B342D62334CF0D0011C790 /* ComicSansMS3.ttf in Resources */,
 				57BE6422236810EA00E8681A /* Montserrat-Bold.ttf in Resources */,
@@ -618,11 +677,13 @@
 				57B342F42334D03F0011C790 /* KeyboardAvoiding.swift in Sources */,
 				57C8DDDB2359C3CF00978EFE /* UserRegistrationViewController.swift in Sources */,
 				5774BE92233484990023DCCF /* AnimatedField.swift in Sources */,
+				57AA4B552371C3E800BA761B /* ProfileListViewController.swift in Sources */,
 				570353F22354A48F0098C9DA /* SetKPIViewController.swift in Sources */,
 				57B3430A2334E1EA0011C790 /* AddPlayerProfileViewController.swift in Sources */,
 				57B343072334DD240011C790 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				5774BE95233484990023DCCF /* String+RegEx.swift in Sources */,
 				5774BE94233484990023DCCF /* Date+Format.swift in Sources */,
+				57AA4B582371C51D00BA761B /* ProfileListCell.swift in Sources */,
 				57121DBC23570D1F005F125E /* ActiveTrackingViewController.swift in Sources */,
 				5774BE98233484990023DCCF /* AnimatedFieldType.swift in Sources */,
 				06656DF1237049F4000392DD /* ActiveTrackingCollectionCell.swift in Sources */,
@@ -644,11 +705,14 @@
 				57B342FB2334D9BC0011C790 /* IBDesignables.swift in Sources */,
 				570353EF23548C150098C9DA /* AddTeamProfileViewController.swift in Sources */,
 				5774BE93233484990023DCCF /* IconsLibrary.swift in Sources */,
+				57B86675237510CF0058614E /* PlayerHistoryViewController.swift in Sources */,
 				5774BE97233484990023DCCF /* UIView+Nib.swift in Sources */,
 				5774BE9D233484990023DCCF /* AnimatedField+Protocols.swift in Sources */,
 				5774BE4F233482000023DCCF /* AppDelegate.swift in Sources */,
 				570353E6235481560098C9DA /* MyTeamsViewController.swift in Sources */,
 				570353EC23548B5D0098C9DA /* Constants.swift in Sources */,
+				573717CA2383E0D7004DFC79 /* SummaryViewController.swift in Sources */,
+				573717CD2383E473004DFC79 /* VideoTrackingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

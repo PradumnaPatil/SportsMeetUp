@@ -14,7 +14,8 @@ class SoccerVC: UIViewController {
     @IBOutlet weak var txtFieldSelectPosition: CustomTextField!
     @IBOutlet weak var txtFieldSelectFormation: CustomTextField!
     @IBOutlet weak var txtFieldSelectOppositionTeam: CustomTextField!
-
+    @IBOutlet weak var btnVideoTracking: UIButton!
+    
     
     let arrPositionArray = ["Goalkeeper", "Full-backs", "Centre-Backs", "Sweeper", "Central Midfield", "Wide Midfield", "Striker", "Behind the Striker"]
     let arrPlayerArray = ["David Beckham", "Reggie Bush", "Tony Romo", "Diego Maradona", "Wayne Rooney", "Vyacheslav Malafeev", "Ian Roberts", "Justin Fashanu", "Zinedine Zidane", "Luís Figo", "Paris Jackson"]
@@ -49,15 +50,28 @@ class SoccerVC: UIViewController {
         teamPicker.dataSource = self
         txtFieldSelectOppositionTeam.inputView = teamPicker
         txtFieldSelectOppositionTeam.inputAccessoryView = createToolBar()
+        
     }
+    
+    
     
     
     private func setUpScreens() {
         
     }
     @IBAction func trackingButton(_ sender: UIButton) {
+        if btnVideoTracking.isSelected == true {
+            let videoTrackingViewController = self.storyboard?.instantiateViewController(withIdentifier: "VideoTrackingViewController") as! VideoTrackingViewController
+            self.navigationController?.pushViewController(videoTrackingViewController, animated: true)
+        } else {
+            let activeTrackingVC = self.storyboard?.instantiateViewController(withIdentifier: "ActiveTrackingVC") as! ActiveTrackingVC
+            self.navigationController?.pushViewController(activeTrackingVC, animated: true)
+        }
     }
-    
+    @IBAction func btnVideoTrackingClicked(_ sender: Any) {
+        btnVideoTracking.isSelected = !btnVideoTracking.isSelected
+    }
+
     func createToolBar() -> UIToolbar {
         let toolBar = UIToolbar()
         toolBar.barStyle = UIBarStyle.default
@@ -100,16 +114,9 @@ class SoccerVC: UIViewController {
         //txtFieldSelectPosition.text = ""
         self.view.endEditing(true)
     }
-
+    
 }
-/*
- let playerPicker = UIPickerView()
- let positionPicker = UIPickerView()
- let formationPicker = UIPickerView()
- let teamPicker = UIPickerView()
 
- 
- */
 
 extension SoccerVC: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

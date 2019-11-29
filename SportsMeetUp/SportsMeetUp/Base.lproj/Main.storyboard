@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gtf-md-PHQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0eX-uM-CwM">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,8 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="COMIC.TTF">
+            <string>ComicSansMS</string>
+        </array>
         <array key="Montserrat-Medium.ttf">
             <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
         </array>
         <array key="Montserrat-SemiBold.ttf">
             <string>Montserrat-SemiBold</string>
@@ -27,10 +33,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bK2-EI-R6f">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66T-7E-hGx">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soccer Tracking for (Player Name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdY-kz-dxo">
                                                 <rect key="frame" x="16" y="5" width="275" height="20"/>
@@ -63,14 +69,14 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Eq-JF-yLA">
-                                                <rect key="frame" x="16" y="95" width="382" height="250"/>
+                                                <rect key="frame" x="16" y="95" width="382" height="263.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="13Y-df-Fdu">
-                                                <rect key="frame" x="16" y="355" width="382" height="45"/>
+                                                <rect key="frame" x="16" y="368.5" width="382" height="47.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrS-Xy-Uuu" customClass="CustomButton" customModule="SportsMeetUp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="183.5" height="45"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="183.5" height="47.5"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
                                                         <state key="normal" title="START">
@@ -86,7 +92,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roB-CB-zm0" customClass="CustomLabel" customModule="SportsMeetUp" customModuleProvider="target">
-                                                        <rect key="frame" x="198.5" y="0.0" width="183.5" height="45"/>
+                                                        <rect key="frame" x="198.5" y="0.0" width="183.5" height="47.5"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -100,7 +106,7 @@
                                                 </subviews>
                                             </stackView>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7cQ-KU-Dkc">
-                                                <rect key="frame" x="16" y="408" width="382" height="314"/>
+                                                <rect key="frame" x="16" y="424" width="382" height="342"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
@@ -147,7 +153,7 @@
                                                 </connections>
                                             </tableView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOa-b8-hky" customClass="CustomButton" customModule="SportsMeetUp" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="730" width="382" height="44"/>
+                                                <rect key="frame" x="16" y="774" width="382" height="44"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="jC2-58-vEA"/>
@@ -237,25 +243,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Performance Summary :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0x-cS-TlW">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Performance Summary :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0x-cS-TlW">
                                 <rect key="frame" x="20" y="60" width="248" height="24.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Playing Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spw-zW-rxG">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Playing Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spw-zW-rxG">
                                 <rect key="frame" x="111.5" y="209" width="191" height="24.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS. (Opposition Name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4b-g2-qkV">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS. (Opposition Name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4b-g2-qkV">
                                 <rect key="frame" x="92" y="104.5" width="230" height="24.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Time Slot" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pco-lv-LqW" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Time Slot" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pco-lv-LqW" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="144" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="N8F-Q0-DTo"/>
@@ -267,10 +273,16 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="applyPadding" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Areas of Improvement:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHw-KO-Ru5">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Areas of Improvement:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHw-KO-Ru5">
                                 <rect key="frame" x="97.278612716705766" y="310" width="232" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Summary will be shown here." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcJ-my-gFN">
+                                <rect key="frame" x="8" y="436.5" width="398" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -280,11 +292,15 @@
                             <constraint firstItem="Spw-zW-rxG" firstAttribute="top" secondItem="pco-lv-LqW" secondAttribute="bottom" constant="25" id="29X-Tt-gEw"/>
                             <constraint firstItem="pco-lv-LqW" firstAttribute="leading" secondItem="ZQG-uS-dCX" secondAttribute="leading" constant="20" id="6xb-f4-xAc"/>
                             <constraint firstItem="D0x-cS-TlW" firstAttribute="leading" secondItem="ZQG-uS-dCX" secondAttribute="leading" constant="20" id="L6c-d2-ox7"/>
+                            <constraint firstItem="ZQG-uS-dCX" firstAttribute="trailing" secondItem="LcJ-my-gFN" secondAttribute="trailing" constant="8" id="M7I-tu-NYT"/>
                             <constraint firstItem="Spw-zW-rxG" firstAttribute="centerX" secondItem="kfH-DL-sJy" secondAttribute="centerX" id="O7M-ig-suZ"/>
                             <constraint firstItem="pco-lv-LqW" firstAttribute="top" secondItem="c4b-g2-qkV" secondAttribute="bottom" constant="15" id="PoH-8o-Bhw"/>
                             <constraint firstItem="c4b-g2-qkV" firstAttribute="top" secondItem="D0x-cS-TlW" secondAttribute="bottom" constant="20" id="R2x-pS-bnE"/>
+                            <constraint firstItem="LcJ-my-gFN" firstAttribute="centerY" secondItem="kfH-DL-sJy" secondAttribute="centerY" id="WcU-nv-Atw"/>
+                            <constraint firstItem="LcJ-my-gFN" firstAttribute="centerX" secondItem="kfH-DL-sJy" secondAttribute="centerX" id="Xl8-y2-iLD"/>
                             <constraint firstItem="D0x-cS-TlW" firstAttribute="top" secondItem="ZQG-uS-dCX" secondAttribute="top" constant="16" id="hL4-S1-sWj"/>
                             <constraint firstItem="ZQG-uS-dCX" firstAttribute="trailing" secondItem="pco-lv-LqW" secondAttribute="trailing" constant="20" id="hbu-qQ-hMW"/>
+                            <constraint firstItem="LcJ-my-gFN" firstAttribute="leading" secondItem="ZQG-uS-dCX" secondAttribute="leading" constant="8" id="kgj-VM-q1l"/>
                             <constraint firstItem="c4b-g2-qkV" firstAttribute="centerX" secondItem="kfH-DL-sJy" secondAttribute="centerX" id="xck-jw-VYx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZQG-uS-dCX"/>
@@ -297,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akA-WP-RBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-143" y="1134"/>
+            <point key="canvasLocation" x="12787" y="1938"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="q5N-5z-C5h">
@@ -401,26 +417,51 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yfu-kb-Q8Y">
                                                 <rect key="frame" x="16" y="100" width="382" height="320"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SmX-6K-buU" customClass="AnimatedField" customModule="SportsMeetUp" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m50-ha-p8K" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="48"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUy-Xa-F6L" customClass="AnimatedField" customModule="SportsMeetUp" customModuleProvider="target">
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyPadding" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tNa-ky-uau" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="68" width="382" height="48"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glM-DZ-1et" customClass="AnimatedField" customModule="SportsMeetUp" customModuleProvider="target">
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyPadding" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T77-BD-Hfh" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="136" width="382" height="48"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4U-AS-D6V" customClass="AnimatedField" customModule="SportsMeetUp" customModuleProvider="target">
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyPadding" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rXF-gf-owr" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="204" width="382" height="48"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqX-A3-M5b" customClass="AnimatedField" customModule="SportsMeetUp" customModuleProvider="target">
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyPadding" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4mW-wc-UJS" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="272" width="382" height="48"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </view>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyPadding" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -498,6 +539,7 @@
                                             <constraint firstItem="ekr-ey-wTR" firstAttribute="centerY" secondItem="KSl-Xo-Sj1" secondAttribute="centerY" id="Mdq-00-2ft"/>
                                             <constraint firstItem="lie-6z-Hjc" firstAttribute="top" secondItem="ekr-ey-wTR" secondAttribute="bottom" constant="18" id="Mzm-8L-bI7"/>
                                             <constraint firstItem="yfu-kb-Q8Y" firstAttribute="leading" secondItem="4B7-ao-d9t" secondAttribute="leading" constant="16" id="Nwa-tG-4bf"/>
+                                            <constraint firstAttribute="bottom" secondItem="awX-kk-DnD" secondAttribute="bottom" constant="180.5" id="OdT-jS-EVT"/>
                                             <constraint firstItem="yfu-kb-Q8Y" firstAttribute="top" secondItem="9Ar-kh-k5i" secondAttribute="bottom" constant="15" id="Qdh-ZZ-uw8"/>
                                             <constraint firstAttribute="trailing" secondItem="yfu-kb-Q8Y" secondAttribute="trailing" constant="16" id="Rz5-DQ-whk"/>
                                             <constraint firstItem="KSl-Xo-Sj1" firstAttribute="top" secondItem="yfu-kb-Q8Y" secondAttribute="bottom" constant="50" id="TE6-IB-s8X"/>
@@ -519,7 +561,7 @@
                                     <constraint firstAttribute="bottom" secondItem="4B7-ao-d9t" secondAttribute="bottom" id="Ny6-sT-HMm"/>
                                     <constraint firstItem="4B7-ao-d9t" firstAttribute="top" secondItem="U1x-5o-5W8" secondAttribute="top" id="QU1-np-0EH"/>
                                     <constraint firstItem="4B7-ao-d9t" firstAttribute="leading" secondItem="U1x-5o-5W8" secondAttribute="leading" id="hTG-KG-ZB7"/>
-                                    <constraint firstItem="4B7-ao-d9t" firstAttribute="height" secondItem="U1x-5o-5W8" secondAttribute="height" id="t32-Th-Waz"/>
+                                    <constraint firstItem="4B7-ao-d9t" firstAttribute="height" secondItem="U1x-5o-5W8" secondAttribute="height" priority="250" id="t32-Th-Waz"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -537,11 +579,11 @@
                         <outlet property="btnNext" destination="awX-kk-DnD" id="EnB-99-BJS"/>
                         <outlet property="btnTermsAndConditions" destination="lie-6z-Hjc" id="1Zg-CG-SGM"/>
                         <outlet property="btnTermsAndConditionsCheckmark" destination="SEx-q5-gz6" id="7Kf-d0-wFt"/>
-                        <outlet property="txtConfirmPassword" destination="zqX-A3-M5b" id="iYc-VE-B57"/>
-                        <outlet property="txtEmail" destination="glM-DZ-1et" id="LaJ-7Z-DZj"/>
-                        <outlet property="txtFirstname" destination="SmX-6K-buU" id="YVo-9J-S32"/>
-                        <outlet property="txtLastname" destination="UUy-Xa-F6L" id="66g-K5-sNL"/>
-                        <outlet property="txtPassword" destination="d4U-AS-D6V" id="vxK-nX-Em8"/>
+                        <outlet property="txtConfirmPassword" destination="4mW-wc-UJS" id="2R3-VK-Xq3"/>
+                        <outlet property="txtEmail" destination="T77-BD-Hfh" id="rhX-6p-aJP"/>
+                        <outlet property="txtFirstname" destination="m50-ha-p8K" id="VZD-Kv-mtA"/>
+                        <outlet property="txtLastname" destination="tNa-ky-uau" id="XWy-zi-Enm"/>
+                        <outlet property="txtPassword" destination="rXF-gf-owr" id="2Au-Av-gyV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bsd-Zd-YZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -587,14 +629,24 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LZC-kN-170">
                                                 <rect key="frame" x="16" y="120" width="382" height="128"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsN-Ng-X09" customClass="AnimatedField" customModule="SportsMeetUp" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HUc-a2-WeK" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="54"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xO2-tw-Mh2" customClass="AnimatedField" customModule="SportsMeetUp" customModuleProvider="target">
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyPadding" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yCp-OZ-1EX" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="74" width="382" height="54"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </view>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyPadding" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -621,7 +673,7 @@
                                                 <connections>
                                                     <action selector="btnLoginClicked:" destination="LRf-U4-lfF" eventType="touchUpInside" id="UAO-od-bJq"/>
                                                     <action selector="btnNextClicked:" destination="Myy-Xm-bU2" eventType="touchUpInside" id="ZbB-GF-wp4"/>
-                                                    <segue destination="Igu-Yf-HPE" kind="push" id="dWR-XD-FJO"/>
+                                                    <segue destination="mS9-da-w7v" kind="push" id="JtF-mQ-YKk"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -642,7 +694,7 @@
                                     <constraint firstItem="oRc-9N-QjZ" firstAttribute="top" secondItem="kYV-wk-dgp" secondAttribute="top" id="BvE-bk-3Kq"/>
                                     <constraint firstAttribute="bottom" secondItem="oRc-9N-QjZ" secondAttribute="bottom" id="HY8-vV-M2i"/>
                                     <constraint firstItem="oRc-9N-QjZ" firstAttribute="leading" secondItem="kYV-wk-dgp" secondAttribute="leading" id="TEu-57-wVt"/>
-                                    <constraint firstItem="oRc-9N-QjZ" firstAttribute="height" secondItem="kYV-wk-dgp" secondAttribute="height" id="Vjx-Mz-gQU"/>
+                                    <constraint firstItem="oRc-9N-QjZ" firstAttribute="height" secondItem="kYV-wk-dgp" secondAttribute="height" priority="250" id="Vjx-Mz-gQU"/>
                                     <constraint firstAttribute="trailing" secondItem="oRc-9N-QjZ" secondAttribute="trailing" id="fmR-Yk-x8N"/>
                                     <constraint firstItem="oRc-9N-QjZ" firstAttribute="width" secondItem="kYV-wk-dgp" secondAttribute="width" id="iDG-jj-9v6"/>
                                 </constraints>
@@ -658,14 +710,10 @@
                         <viewLayoutGuide key="safeArea" id="4wc-CD-g07"/>
                     </view>
                     <navigationItem key="navigationItem" id="hw4-s8-L8k"/>
-                    <connections>
-                        <outlet property="txtFieldPassword" destination="xO2-tw-Mh2" id="VKn-X2-jTB"/>
-                        <outlet property="txtFieldUsername" destination="rsN-Ng-X09" id="N5o-ix-Ibd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I1c-5V-lpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7489.8550724637689" y="1930.5803571428571"/>
+            <point key="canvasLocation" x="7490" y="2006"/>
         </scene>
         <!--Gymnastics-->
         <scene sceneID="1ms-pR-F6w">
@@ -776,7 +824,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-H9-0t6" customClass="TPKeyboardAvoidingScrollView">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlu-2o-J0d">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
@@ -784,24 +832,39 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zRK-pb-zlg">
                                                 <rect key="frame" x="16" y="20" width="382" height="193"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Mj-9G-q9Q" customClass="AnimatedField" customModule="SportsMeetUp" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Player Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qt2-sn-6ag" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="51"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7KA-ii-UZ8" customClass="AnimatedField" customModule="SportsMeetUp" customModuleProvider="target">
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyPadding" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="birth year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8mv-zf-FSk" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="71" width="382" height="51"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQb-5u-LVS" customClass="AnimatedField" customModule="SportsMeetUp" customModuleProvider="target">
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyPadding" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cqF-gj-QCz" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="142" width="382" height="51"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </view>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyPadding" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="193" id="rP9-D1-BEU"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PYe-hw-LoF">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PYe-hw-LoF">
                                                 <rect key="frame" x="16" y="243" width="331" height="40"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1X-W8-JSQ">
@@ -908,6 +971,13 @@
                                                     <segue destination="B03-ZJ-CtE" kind="push" id="guo-cm-snP"/>
                                                 </connections>
                                             </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yD6-Ey-kh0">
+                                                <rect key="frame" x="0.0" y="799" width="414" height="1"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="39E-x3-q0O"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.98039215690000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -916,14 +986,18 @@
                                             <constraint firstItem="Vnp-ud-9Of" firstAttribute="top" secondItem="PYe-hw-LoF" secondAttribute="bottom" constant="30" id="71j-8G-U9Q"/>
                                             <constraint firstItem="Vnp-ud-9Of" firstAttribute="centerX" secondItem="vlu-2o-J0d" secondAttribute="centerX" id="AJe-AB-tpA"/>
                                             <constraint firstItem="zRK-pb-zlg" firstAttribute="top" secondItem="vlu-2o-J0d" secondAttribute="top" constant="20" id="CQo-lW-RGW"/>
+                                            <constraint firstAttribute="trailing" secondItem="yD6-Ey-kh0" secondAttribute="trailing" id="GGg-Jb-qb1"/>
+                                            <constraint firstItem="yD6-Ey-kh0" firstAttribute="leading" secondItem="vlu-2o-J0d" secondAttribute="leading" id="LqM-ZO-sUo"/>
+                                            <constraint firstItem="yD6-Ey-kh0" firstAttribute="top" secondItem="Vnp-ud-9Of" secondAttribute="bottom" constant="442" id="U5W-pu-cd2"/>
                                             <constraint firstAttribute="trailing" secondItem="zRK-pb-zlg" secondAttribute="trailing" constant="16" id="VRv-c0-Y29"/>
+                                            <constraint firstAttribute="bottom" secondItem="yD6-Ey-kh0" secondAttribute="bottom" constant="8" id="e3Y-P9-zRN"/>
                                             <constraint firstItem="PYe-hw-LoF" firstAttribute="top" secondItem="zRK-pb-zlg" secondAttribute="bottom" constant="30" id="nvL-z4-ysm"/>
                                             <constraint firstItem="PYe-hw-LoF" firstAttribute="width" secondItem="vlu-2o-J0d" secondAttribute="width" multiplier="0.8" id="uwH-BY-iB5"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="vlu-2o-J0d" firstAttribute="height" secondItem="gKT-H9-0t6" secondAttribute="height" id="LeY-xG-wir"/>
+                                    <constraint firstItem="vlu-2o-J0d" firstAttribute="height" secondItem="gKT-H9-0t6" secondAttribute="height" priority="250" id="LeY-xG-wir"/>
                                     <constraint firstItem="vlu-2o-J0d" firstAttribute="top" secondItem="gKT-H9-0t6" secondAttribute="top" id="MRN-PS-UGD"/>
                                     <constraint firstItem="vlu-2o-J0d" firstAttribute="leading" secondItem="gKT-H9-0t6" secondAttribute="leading" id="RvR-lu-pVP"/>
                                     <constraint firstAttribute="trailing" secondItem="vlu-2o-J0d" secondAttribute="trailing" id="XvX-wa-eCZ"/>
@@ -943,14 +1017,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add Player Profile" id="DNE-bT-RMh"/>
                     <connections>
-                        <outlet property="txtPlayerAge" destination="7KA-ii-UZ8" id="dCa-aK-uKf"/>
-                        <outlet property="txtPlayerFullName" destination="5Mj-9G-q9Q" id="wpt-4f-vPK"/>
-                        <outlet property="txtTeamName" destination="pQb-5u-LVS" id="LsQ-Ec-IVz"/>
+                        <outlet property="txtPhoneNumber" destination="cqF-gj-QCz" id="6t5-ej-n3C"/>
+                        <outlet property="txtPlayerAge" destination="8mv-zf-FSk" id="MYL-ki-NiH"/>
+                        <outlet property="txtPlayerFullName" destination="qt2-sn-6ag" id="6Fa-fc-5fz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ohc-vN-Se9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7490" y="1290"/>
+            <point key="canvasLocation" x="7490" y="1288"/>
         </scene>
         <!--SetKPI View Controller-->
         <scene sceneID="FIs-ik-DkY">
@@ -961,7 +1035,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Player" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F0N-At-zoL" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
-                                <rect key="frame" x="20" y="103" width="374" height="40"/>
+                                <rect key="frame" x="20" y="59" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="n4g-IF-yHV"/>
                                 </constraints>
@@ -973,7 +1047,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Sport" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1sH-e1-GKH" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
-                                <rect key="frame" x="20" y="155" width="374" height="40"/>
+                                <rect key="frame" x="20" y="111" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="2jS-k3-UYj"/>
                                 </constraints>
@@ -985,7 +1059,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Position" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4HW-7U-ZGQ" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
-                                <rect key="frame" x="20" y="207" width="374" height="40"/>
+                                <rect key="frame" x="20" y="163" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Bfq-Iq-bz3"/>
                                 </constraints>
@@ -1012,11 +1086,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="PBG-r0-Fkd" kind="push" id="Iht-zF-aDZ"/>
+                                    <action selector="btnSaveProfileClicked:" destination="B03-ZJ-CtE" eventType="touchUpInside" id="bgm-KP-dpb"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ubf-mX-34p">
-                                <rect key="frame" x="16" y="262" width="382" height="541"/>
+                                <rect key="frame" x="16" y="218" width="382" height="585"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -1110,7 +1184,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AmH-Vg-spF">
-                                <rect key="frame" x="19" y="108" width="376" height="450"/>
+                                <rect key="frame" x="19" y="64" width="376" height="450"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a sport to start tracking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ah4-zO-krW">
                                         <rect key="frame" x="0.0" y="0.0" width="376" height="97.5"/>
@@ -1233,7 +1307,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sOU-tV-BMf">
-                                <rect key="frame" x="16" y="113" width="382" height="41"/>
+                                <rect key="frame" x="16" y="69" width="382" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="vzn-xv-cpG"/>
                                 </constraints>
@@ -1246,7 +1320,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2iA-u4-W5Q">
-                                <rect key="frame" x="0.0" y="173" width="414" height="629"/>
+                                <rect key="frame" x="0.0" y="129" width="414" height="673"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -1311,8 +1385,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnLoginClicked:" destination="LRf-U4-lfF" eventType="touchUpInside" id="QsE-eU-Luw"/>
-                                    <action selector="btnNextClicked:" destination="Myy-Xm-bU2" eventType="touchUpInside" id="tw8-dh-qtn"/>
                                     <segue destination="Qeq-y9-9Yw" kind="push" id="56k-Mg-GHU"/>
                                 </connections>
                             </button>
@@ -1339,39 +1411,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rzE-E6-Cti" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8211.5942028985519" y="1937.9464285714284"/>
+            <point key="canvasLocation" x="8212" y="2075"/>
         </scene>
         <!--SoccerVC-->
         <scene sceneID="Ey4-4m-rf0">
             <objects>
-                <viewController id="07L-7n-MjK" customClass="SoccerVC" customModule="SportsMeetUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SoccerVC" id="07L-7n-MjK" customClass="SoccerVC" customModule="SportsMeetUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="axu-rZ-djz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQY-qT-SP2" customClass="TPKeyboardAvoidingScrollView">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yu9-j5-7dC">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="B6Y-Dx-JNB">
-                                                <rect key="frame" x="10" y="20" width="394" height="515"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="B6Y-Dx-JNB">
+                                                <rect key="frame" x="10" y="20" width="394" height="585"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Profile : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4v1-kh-IBF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="40"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="v4g-Fp-So9"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="39.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Player" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ho-hc-ax3" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="55" width="394" height="35"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="35" id="CbB-Sl-GzA"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="54.5" width="394" height="39.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1389,25 +1455,22 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Details :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcM-ol-Umt">
-                                                        <rect key="frame" x="0.0" y="105" width="394" height="40"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="fWz-Wt-iue"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="109" width="394" height="39.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="x5X-UK-bK2">
-                                                        <rect key="frame" x="0.0" y="160" width="394" height="40"/>
+                                                        <rect key="frame" x="0.0" y="163.5" width="394" height="39.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Players per side :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x67-af-TSR">
-                                                                <rect key="frame" x="0.0" y="0.0" width="218" height="40"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="218" height="39.5"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="placeholder" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cbo-Xi-luz" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
-                                                                <rect key="frame" x="223" y="0.0" width="171" height="40"/>
+                                                                <rect key="frame" x="223" y="0.0" width="171" height="39.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
@@ -1424,24 +1487,15 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                         </subviews>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="lo1-QS-KE5"/>
-                                                        </constraints>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starting Position :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cac-nt-aqg">
-                                                        <rect key="frame" x="0.0" y="215" width="394" height="40"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="itM-U3-NeC"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="218" width="394" height="39.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Starting position for the player" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dZi-pw-Wk5" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="270" width="394" height="35"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="35" id="OrL-VS-llA"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="272.5" width="394" height="40"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1459,19 +1513,13 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formation (Optional) :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZc-pI-HdB">
-                                                        <rect key="frame" x="0.0" y="320" width="394" height="40"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="nv9-Eo-nUS"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="327.5" width="394" height="39.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Possible options" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E47-Wh-G1W" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="375" width="394" height="35"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="35" id="7Cw-bE-ofV"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="382" width="394" height="39.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1489,16 +1537,13 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oppositon Team Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmY-CL-XFK">
-                                                        <rect key="frame" x="0.0" y="425" width="394" height="40"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="Nje-oM-H3J"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="436.5" width="394" height="39.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select opposition team" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3eT-lE-0b5" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="480" width="394" height="35"/>
+                                                        <rect key="frame" x="0.0" y="491" width="394" height="39.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1512,13 +1557,38 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oVC-gT-7Wj">
+                                                        <rect key="frame" x="0.0" y="545.5" width="394" height="39.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use Video Tracking:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrY-uv-dHu">
+                                                                <rect key="frame" x="0.0" y="0.0" width="349.5" height="39.5"/>
+                                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpK-MR-g0f">
+                                                                <rect key="frame" x="354.5" y="0.0" width="39.5" height="39.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="ZpK-MR-g0f" secondAttribute="height" multiplier="1:1" id="RBR-cs-fGX"/>
+                                                                </constraints>
+                                                                <state key="normal" image="unchecked-checkbox"/>
+                                                                <state key="selected" image="checked-checkbox"/>
+                                                                <connections>
+                                                                    <action selector="btnVideoTrackingClicked:" destination="07L-7n-MjK" eventType="touchUpInside" id="Al2-NQ-yu7"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="ZpK-MR-g0f" firstAttribute="width" secondItem="ZpK-MR-g0f" secondAttribute="height" multiplier="1:1" id="09X-gP-PWD"/>
+                                                        </constraints>
+                                                    </stackView>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="515" id="PKx-yW-04V"/>
+                                                    <constraint firstAttribute="height" constant="585" id="PKx-yW-04V"/>
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xde-fF-zcy" customClass="CustomButton" customModule="SportsMeetUp" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="730" width="382" height="44"/>
+                                                <rect key="frame" x="16" y="774" width="382" height="44"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="Hbc-uS-bbo"/>
@@ -1533,9 +1603,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="trackingButton:" destination="U5A-JX-31a" eventType="touchUpInside" id="BSQ-bi-cd4"/>
                                                     <action selector="trackingButton:" destination="07L-7n-MjK" eventType="touchUpInside" id="uGu-aU-BIb"/>
-                                                    <segue destination="ZJ2-Aj-PtS" kind="push" id="HI5-uU-Kvi"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1571,6 +1639,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="sIs-JS-ple"/>
                     <connections>
+                        <outlet property="btnVideoTracking" destination="ZpK-MR-g0f" id="y2t-XW-PVp"/>
                         <outlet property="txtFieldSelectFormation" destination="E47-Wh-G1W" id="h5f-xY-fu4"/>
                         <outlet property="txtFieldSelectOppositionTeam" destination="3eT-lE-0b5" id="hSQ-dB-xN4"/>
                         <outlet property="txtFieldSelectPlayer" destination="2ho-hc-ax3" id="Xqc-IE-bag"/>
@@ -1578,9 +1647,76 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QYI-dh-Gl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="U5A-JX-31a" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="9671" y="1290"/>
+        </scene>
+        <!--Video Tracking View Controller-->
+        <scene sceneID="Yrg-b4-Y3k">
+            <objects>
+                <viewController storyboardIdentifier="VideoTrackingViewController" id="ArP-Ot-ron" customClass="VideoTrackingViewController" customModule="SportsMeetUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Og-vz-Sh0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="d9E-Fw-bD3">
+                                <rect key="frame" x="20" y="812" width="374" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9c-nI-7dw" customClass="CustomButton" customModule="SportsMeetUp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                        <state key="normal" title="START">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.13218051419999999" green="0.16814667599999999" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sap-Rh-ujl" customClass="CustomButton" customModule="SportsMeetUp" customModuleProvider="target">
+                                        <rect key="frame" x="192" y="0.0" width="182" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                        <state key="normal" title="PAUSE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.13218051419999999" green="0.16814667599999999" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="siJ-yC-vca"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="brb-NP-PGV" firstAttribute="trailing" secondItem="d9E-Fw-bD3" secondAttribute="trailing" constant="20" id="VM9-N3-wmc"/>
+                            <constraint firstItem="d9E-Fw-bD3" firstAttribute="bottom" secondItem="brb-NP-PGV" secondAttribute="bottom" id="sSl-o4-11K"/>
+                            <constraint firstItem="d9E-Fw-bD3" firstAttribute="leading" secondItem="brb-NP-PGV" secondAttribute="leading" constant="20" id="v8u-5V-LIq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="brb-NP-PGV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hTr-pL-tVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8940.579710144928" y="2434.8214285714284"/>
         </scene>
         <!--Active TrackingVC-->
         <scene sceneID="e9R-fo-ccD">
@@ -1590,7 +1726,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWf-Fz-o9R">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWf-Fz-o9R" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="0.0" y="64" width="414" height="832"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Xn-Iu-u3E">
@@ -1602,27 +1738,30 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kfd-7F-ePc">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Position" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kfd-7F-ePc" customClass="CustomTextField" customModule="SportsMeetUp" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="52" width="374" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="Mnw-0Q-ofw"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="applyPadding" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Km-iM-lSd">
-                                                <rect key="frame" x="20" y="97" width="374" height="250"/>
+                                                <rect key="frame" x="20" y="97" width="374" height="0.0"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="250" id="9S5-Vk-n7F"/>
+                                                    <constraint firstAttribute="height" id="9S5-Vk-n7F"/>
                                                 </constraints>
                                             </view>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="km8-nf-mTf">
-                                                <rect key="frame" x="20" y="387" width="238" height="2"/>
+                                                <rect key="frame" x="20" y="137" width="238" height="2"/>
                                             </progressView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHa-bY-Gb1" customClass="CustomButton" customModule="SportsMeetUp" customModuleProvider="target">
-                                                <rect key="frame" x="278" y="371.5" width="116" height="33"/>
+                                                <rect key="frame" x="278" y="121.5" width="116" height="33"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                 <state key="normal" title="        Start        ">
@@ -1635,7 +1774,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bJi-FB-p0m">
-                                                <rect key="frame" x="20" y="434.5" width="374" height="230"/>
+                                                <rect key="frame" x="20" y="184.5" width="374" height="230"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="230" id="D1T-hD-J36"/>
@@ -1732,27 +1871,50 @@
                                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="dn6-C5-axE">
                                                 <rect key="frame" x="187.5" y="674.5" width="39" height="37"/>
                                             </pageControl>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giB-ED-axx" customClass="CustomButton" customModule="SportsMeetUp" customModuleProvider="target">
+                                                <rect key="frame" x="107" y="746" width="200" height="44"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="6Re-nb-rez"/>
+                                                    <constraint firstAttribute="width" constant="200" id="Ced-8X-H0n"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Save Game">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="XA9-NQ-8An" kind="push" id="YAp-TU-IXu"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="ugD-nj-RUv" secondAttribute="trailing" constant="20" id="4R4-GG-Vu1"/>
                                             <constraint firstItem="6Km-iM-lSd" firstAttribute="top" secondItem="kfd-7F-ePc" secondAttribute="bottom" constant="10" id="6yL-Q8-6EV"/>
                                             <constraint firstItem="kfd-7F-ePc" firstAttribute="top" secondItem="ugD-nj-RUv" secondAttribute="bottom" constant="10" id="7m0-Hi-hWr"/>
                                             <constraint firstItem="kfd-7F-ePc" firstAttribute="leading" secondItem="ugD-nj-RUv" secondAttribute="leading" id="AOz-rh-h0Y"/>
+                                            <constraint firstItem="giB-ED-axx" firstAttribute="centerX" secondItem="3Xn-Iu-u3E" secondAttribute="centerX" id="DG6-qz-9Jq"/>
                                             <constraint firstItem="ugD-nj-RUv" firstAttribute="leading" secondItem="3Xn-Iu-u3E" secondAttribute="leading" constant="20" id="Db9-D3-exj"/>
                                             <constraint firstItem="6Km-iM-lSd" firstAttribute="leading" secondItem="kfd-7F-ePc" secondAttribute="leading" id="Lwy-1N-cXP"/>
                                             <constraint firstItem="bJi-FB-p0m" firstAttribute="top" secondItem="WHa-bY-Gb1" secondAttribute="bottom" constant="30" id="N8C-Fq-n1Q"/>
                                             <constraint firstItem="km8-nf-mTf" firstAttribute="leading" secondItem="6Km-iM-lSd" secondAttribute="leading" id="P4x-SN-0x3"/>
                                             <constraint firstItem="bJi-FB-p0m" firstAttribute="leading" secondItem="6Km-iM-lSd" secondAttribute="leading" id="Uko-ZH-T8R"/>
                                             <constraint firstItem="bJi-FB-p0m" firstAttribute="trailing" secondItem="6Km-iM-lSd" secondAttribute="trailing" id="VEh-pO-eNY"/>
+                                            <constraint firstAttribute="bottom" secondItem="dn6-C5-axE" secondAttribute="bottom" constant="120.5" id="YSi-fu-zdZ"/>
                                             <constraint firstItem="kfd-7F-ePc" firstAttribute="trailing" secondItem="ugD-nj-RUv" secondAttribute="trailing" id="aQC-lb-YK2"/>
                                             <constraint firstItem="WHa-bY-Gb1" firstAttribute="leading" secondItem="km8-nf-mTf" secondAttribute="trailing" constant="20" id="bXd-t2-pYM"/>
                                             <constraint firstItem="km8-nf-mTf" firstAttribute="top" secondItem="6Km-iM-lSd" secondAttribute="bottom" constant="40" id="eEG-hU-ZXo"/>
-                                            <constraint firstItem="dn6-C5-axE" firstAttribute="top" secondItem="bJi-FB-p0m" secondAttribute="bottom" constant="10" id="fTE-ab-VNQ"/>
                                             <constraint firstItem="dn6-C5-axE" firstAttribute="centerX" secondItem="bJi-FB-p0m" secondAttribute="centerX" id="hxW-KY-jBD"/>
                                             <constraint firstItem="km8-nf-mTf" firstAttribute="centerY" secondItem="WHa-bY-Gb1" secondAttribute="centerY" id="ix8-FQ-Lrm"/>
                                             <constraint firstItem="ugD-nj-RUv" firstAttribute="top" secondItem="3Xn-Iu-u3E" secondAttribute="top" constant="20" id="ndF-El-4zx"/>
                                             <constraint firstItem="WHa-bY-Gb1" firstAttribute="trailing" secondItem="6Km-iM-lSd" secondAttribute="trailing" id="vos-2w-iZL"/>
+                                            <constraint firstAttribute="bottom" secondItem="giB-ED-axx" secondAttribute="bottom" constant="42" id="wYU-oX-ZNY"/>
                                             <constraint firstItem="6Km-iM-lSd" firstAttribute="trailing" secondItem="kfd-7F-ePc" secondAttribute="trailing" id="zb0-h3-22Z"/>
                                         </constraints>
                                     </view>
@@ -1777,15 +1939,274 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j8w-34-jJJ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1GO-SV-lWR"/>
                     <connections>
                         <outlet property="collectionViewActiveTracking" destination="bJi-FB-p0m" id="fJA-84-fIT"/>
                         <outlet property="contentView" destination="3Xn-Iu-u3E" id="ePX-yy-oft"/>
                         <outlet property="scrollView" destination="mWf-Fz-o9R" id="Fhj-vg-cJF"/>
+                        <outlet property="txtFieldSelectPosition" destination="kfd-7F-ePc" id="dg4-rg-aBG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vAQ-5D-Pxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9669.5652173913059" y="1937.9464285714284"/>
+            <point key="canvasLocation" x="9575" y="1985"/>
+        </scene>
+        <!--Pick Profile To Track-->
+        <scene sceneID="F92-Mi-Fl2">
+            <objects>
+                <viewController storyboardIdentifier="ProfileListViewController" id="mS9-da-w7v" customClass="ProfileListViewController" customModule="SportsMeetUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KQe-3a-gTa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wZh-A5-kGA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProfileListCell" rowHeight="130" id="x4v-pP-Qfp" customClass="ProfileListCell" customModule="SportsMeetUp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x4v-pP-Qfp" id="QSJ-aW-Vix">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6O-eU-aCR" customClass="CustomView" customModule="SportsMeetUp" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="398" height="114"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hSs-2M-bcg">
+                                                            <rect key="frame" x="8" y="8" width="382" height="98"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADv-Bd-vT6">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="0.0"/>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kX5-4v-CzE">
+                                                                    <rect key="frame" x="0.0" y="67" width="382" height="31"/>
+                                                                    <subviews>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trf-ts-Cy9" customClass="CustomButton" customModule="SportsMeetUp" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="187" height="31"/>
+                                                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                                                                            <state key="normal" title="History">
+                                                                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </state>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                    <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                    <real key="value" value="1"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="8"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dex-kv-n9a" customClass="CustomButton" customModule="SportsMeetUp" customModuleProvider="target">
+                                                                            <rect key="frame" x="195" y="0.0" width="187" height="31"/>
+                                                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                                                                            <state key="normal" title="New Session">
+                                                                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </state>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                    <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                    <real key="value" value="1"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="8"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="hSs-2M-bcg" firstAttribute="leading" secondItem="Y6O-eU-aCR" secondAttribute="leading" constant="8" id="VuF-6P-0WQ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="hSs-2M-bcg" secondAttribute="bottom" constant="8" id="eSM-r1-uiw"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hSs-2M-bcg" secondAttribute="trailing" constant="8" id="feX-fs-kcZ"/>
+                                                        <constraint firstItem="hSs-2M-bcg" firstAttribute="top" secondItem="Y6O-eU-aCR" secondAttribute="top" constant="8" id="sy2-l1-l1Y"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Y6O-eU-aCR" secondAttribute="bottom" constant="8" id="Xjc-eX-0op"/>
+                                                <constraint firstItem="Y6O-eU-aCR" firstAttribute="leading" secondItem="QSJ-aW-Vix" secondAttribute="leading" constant="8" id="kTv-16-uuD"/>
+                                                <constraint firstItem="Y6O-eU-aCR" firstAttribute="top" secondItem="QSJ-aW-Vix" secondAttribute="top" constant="8" id="oKt-cw-J4G"/>
+                                                <constraint firstAttribute="trailing" secondItem="Y6O-eU-aCR" secondAttribute="trailing" constant="8" id="wad-h5-86N"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="btnHistory" destination="trf-ts-Cy9" id="YRF-tl-c0R"/>
+                                            <outlet property="btnNewSession" destination="Dex-kv-n9a" id="pwO-CQ-vPA"/>
+                                            <outlet property="customView" destination="Y6O-eU-aCR" id="KKr-hj-rc2"/>
+                                            <outlet property="lblTitle" destination="ADv-Bd-vT6" id="GR4-iv-HQz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="mS9-da-w7v" id="HGH-Rt-Uwg"/>
+                                    <outlet property="delegate" destination="mS9-da-w7v" id="Orc-n7-5b7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wZh-A5-kGA" secondAttribute="bottom" id="B5a-Z0-fjn"/>
+                            <constraint firstItem="wZh-A5-kGA" firstAttribute="trailing" secondItem="JTn-D4-giH" secondAttribute="trailing" id="Nte-MC-fX8"/>
+                            <constraint firstItem="wZh-A5-kGA" firstAttribute="leading" secondItem="JTn-D4-giH" secondAttribute="leading" id="Vis-LS-00Z"/>
+                            <constraint firstItem="wZh-A5-kGA" firstAttribute="top" secondItem="JTn-D4-giH" secondAttribute="top" id="wsE-fZ-FQj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JTn-D4-giH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pick Profile To Track" id="arm-hX-575"/>
+                    <connections>
+                        <outlet property="tblViewProfileList" destination="wZh-A5-kGA" id="miu-ma-E1L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7tH-2k-Byu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10469.565217391306" y="1947.9910714285713"/>
+        </scene>
+        <!--Player History View Controller-->
+        <scene sceneID="BjC-T9-cg8">
+            <objects>
+                <viewController storyboardIdentifier="PlayerHistoryViewController" id="lYe-nz-V17" customClass="PlayerHistoryViewController" customModule="SportsMeetUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DdF-eU-rcO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ibZ-NO-iGL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProfileListCell" rowHeight="130" id="4rZ-GQ-PBD" customClass="ProfileListCell" customModule="SportsMeetUp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4rZ-GQ-PBD" id="daE-XT-Mk9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="me0-fw-k4X" customClass="CustomView" customModule="SportsMeetUp" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="398" height="114"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nDm-ur-YPz">
+                                                            <rect key="frame" x="8" y="8" width="382" height="98"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PF-Pe-MbP">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="98"/>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="nDm-ur-YPz" firstAttribute="leading" secondItem="me0-fw-k4X" secondAttribute="leading" constant="8" id="cA7-DT-DIN"/>
+                                                        <constraint firstAttribute="bottom" secondItem="nDm-ur-YPz" secondAttribute="bottom" constant="8" id="etb-Y0-boD"/>
+                                                        <constraint firstAttribute="trailing" secondItem="nDm-ur-YPz" secondAttribute="trailing" constant="8" id="iM9-Vn-fn3"/>
+                                                        <constraint firstItem="nDm-ur-YPz" firstAttribute="top" secondItem="me0-fw-k4X" secondAttribute="top" constant="8" id="rOj-cV-jhh"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="me0-fw-k4X" secondAttribute="bottom" constant="8" id="6DR-vP-4bC"/>
+                                                <constraint firstAttribute="trailing" secondItem="me0-fw-k4X" secondAttribute="trailing" constant="8" id="BuJ-I7-KXv"/>
+                                                <constraint firstItem="me0-fw-k4X" firstAttribute="top" secondItem="daE-XT-Mk9" secondAttribute="top" constant="8" id="Wme-6V-LaA"/>
+                                                <constraint firstItem="me0-fw-k4X" firstAttribute="leading" secondItem="daE-XT-Mk9" secondAttribute="leading" constant="8" id="oO5-23-Agq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="customView" destination="me0-fw-k4X" id="F3c-sU-dN4"/>
+                                            <outlet property="lblTitle" destination="9PF-Pe-MbP" id="fgC-k6-KhQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="lYe-nz-V17" id="JcQ-sj-cYI"/>
+                                    <outlet property="delegate" destination="lYe-nz-V17" id="9vd-J0-4yz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ibZ-NO-iGL" secondAttribute="bottom" id="KkY-Er-ynf"/>
+                            <constraint firstItem="ibZ-NO-iGL" firstAttribute="leading" secondItem="5dy-s3-ITp" secondAttribute="leading" id="Xxx-Xn-d0Q"/>
+                            <constraint firstItem="ibZ-NO-iGL" firstAttribute="top" secondItem="DdF-eU-rcO" secondAttribute="top" constant="44" id="eMB-Uf-0f0"/>
+                            <constraint firstItem="ibZ-NO-iGL" firstAttribute="trailing" secondItem="5dy-s3-ITp" secondAttribute="trailing" id="hC7-Ps-T6M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5dy-s3-ITp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IA6-Ec-bjj"/>
+                    <connections>
+                        <outlet property="tblPlayerHistory" destination="ibZ-NO-iGL" id="u9Q-OH-GIp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OC2-y4-3O3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11329" y="1949"/>
+        </scene>
+        <!--Summary View Controller-->
+        <scene sceneID="eEs-Ui-qXm">
+            <objects>
+                <viewController storyboardIdentifier="SummaryViewController" id="RQv-Cq-0g7" customClass="SummaryViewController" customModule="SportsMeetUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jyc-7r-Jjt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Summary will be shown here." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtY-hF-crv">
+                                <rect key="frame" x="16" y="436" width="382" height="24"/>
+                                <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NL4-qp-v8W" firstAttribute="trailing" secondItem="BtY-hF-crv" secondAttribute="trailing" constant="16" id="6hO-Dv-1P0"/>
+                            <constraint firstItem="BtY-hF-crv" firstAttribute="leading" secondItem="NL4-qp-v8W" secondAttribute="leading" constant="16" id="StZ-Nd-TaH"/>
+                            <constraint firstItem="BtY-hF-crv" firstAttribute="centerX" secondItem="jyc-7r-Jjt" secondAttribute="centerX" id="UhY-7i-wE2"/>
+                            <constraint firstItem="BtY-hF-crv" firstAttribute="centerY" secondItem="jyc-7r-Jjt" secondAttribute="centerY" id="off-kd-NMD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NL4-qp-v8W"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVB-Sc-5Yp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11992.753623188406" y="1948.6607142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3SU-Zf-hgI">
@@ -1796,7 +2217,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Myy-Xm-bU2" kind="relationship" relationship="rootViewController" id="cOq-OE-Pjd"/>
+                        <segue destination="Myy-Xm-bU2" kind="relationship" relationship="rootViewController" id="IiA-8h-C9p"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kd0-dO-7l8" userLabel="First Responder" sceneMemberID="firstResponder"/>

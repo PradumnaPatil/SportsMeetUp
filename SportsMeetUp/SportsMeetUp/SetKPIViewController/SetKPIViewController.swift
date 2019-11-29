@@ -54,6 +54,10 @@ class SetKPIViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func btnSaveProfileClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     func createToolBar() -> UIToolbar {
         let toolBar = UIToolbar()
         toolBar.barStyle = UIBarStyle.default
@@ -95,7 +99,6 @@ class SetKPIViewController: UIViewController {
         txtFieldSelectPosition.text = ""
         self.view.endEditing(true)
     }
-
 }
 
 extension SetKPIViewController: UIPickerViewDelegate, UIPickerViewDataSource {

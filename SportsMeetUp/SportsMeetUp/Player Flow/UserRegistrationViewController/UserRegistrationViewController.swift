@@ -10,11 +10,11 @@ import UIKit
 
 class UserRegistrationViewController: UIViewController {
 
-    @IBOutlet weak var txtFirstname: AnimatedField!
-    @IBOutlet weak var txtLastname: AnimatedField!
-    @IBOutlet weak var txtEmail: AnimatedField!
-    @IBOutlet weak var txtPassword: AnimatedField!
-    @IBOutlet weak var txtConfirmPassword: AnimatedField!
+    @IBOutlet weak var txtFirstname: UITextField!
+    @IBOutlet weak var txtLastname: UITextField!
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtConfirmPassword: UITextField!
     @IBOutlet weak var btnTermsAndConditions: UIButton!
     @IBOutlet weak var btnTermsAndConditionsCheckmark: UIButton!
     @IBOutlet weak var btnNext: CustomButton!
@@ -24,11 +24,6 @@ class UserRegistrationViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        txtFirstname.applyPropertiesToTextfield(tag: 1, isSecure: false, type: .username(4, 10), isLowercased: true, placeholder: "first name", controller: self, keyboardType: .default)
-        txtLastname.applyPropertiesToTextfield(tag: 1, isSecure: false, type: .username(4, 10), isLowercased: true, placeholder: "last name", controller: self, keyboardType: .default)
-        txtEmail.applyPropertiesToTextfield(tag: 1, isSecure: false, type: .email, isLowercased: true, placeholder: "e-mail", controller: self, keyboardType: .default)
-        txtPassword.applyPropertiesToTextfield(tag: 5, isSecure: true, type: .password(7, 16), isLowercased: true, placeholder: "Password", controller: self, keyboardType: .default)
-        txtConfirmPassword.applyPropertiesToTextfield(tag: 5, isSecure: true, type: .password(7, 16), isLowercased: true, placeholder: "Confirm password", controller: self, keyboardType: .default)
         
         self.title = "User Registration"
         

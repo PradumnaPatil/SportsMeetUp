@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="TiG-st-z6t">
+            <objects>
+                <viewController id="bZm-4U-p4Q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f9l-Wm-xtU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistics available to track:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqm-kw-a9I">
+                                <rect key="frame" x="8" y="66" width="386" height="20"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WgP-XR-oMg">
+                                <rect key="frame" x="8" y="94" width="398" height="768"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyTeamsCustomCell" rowHeight="60" id="BOD-RJ-iX6" customClass="MyTeamsCustomCell" customModule="SportsMeetUp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="398" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BOD-RJ-iX6" id="wpc-0m-Nhh">
+                                            <rect key="frame" x="0.0" y="0.0" width="398" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fg-oW-9b5">
+                                                    <rect key="frame" x="20" y="11" width="0.0" height="37.5"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzI-pn-DVr">
+                                                    <rect key="frame" x="316.5" y="11" width="37.5" height="37.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="gzI-pn-DVr" secondAttribute="height" multiplier="1:1" id="SjJ-VT-ULu"/>
+                                                    </constraints>
+                                                    <state key="normal" image="unchecked-checkbox"/>
+                                                    <state key="selected" image="checked-checkbox"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="gzI-pn-DVr" firstAttribute="top" secondItem="wpc-0m-Nhh" secondAttribute="top" constant="11" id="5K7-Az-sfG"/>
+                                                <constraint firstAttribute="trailing" secondItem="gzI-pn-DVr" secondAttribute="trailing" constant="20" id="9Qo-NX-ZLA"/>
+                                                <constraint firstItem="0Fg-oW-9b5" firstAttribute="leading" secondItem="wpc-0m-Nhh" secondAttribute="leading" constant="20" id="9rL-Cl-HUN"/>
+                                                <constraint firstItem="0Fg-oW-9b5" firstAttribute="top" secondItem="wpc-0m-Nhh" secondAttribute="top" constant="11" id="BEw-Th-LYC"/>
+                                                <constraint firstAttribute="bottom" secondItem="gzI-pn-DVr" secondAttribute="bottom" constant="11" id="aLs-CG-dr2"/>
+                                                <constraint firstAttribute="bottom" secondItem="0Fg-oW-9b5" secondAttribute="bottom" constant="11" id="fOv-I5-5Rx"/>
+                                                <constraint firstItem="gzI-pn-DVr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0Fg-oW-9b5" secondAttribute="trailing" constant="8" id="gSZ-wB-4CN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="btnCheckmark" destination="gzI-pn-DVr" id="p1v-Xb-5oV"/>
+                                            <outlet property="lblTeamTitle" destination="0Fg-oW-9b5" id="ITe-FK-yN8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oqm-kw-a9I" firstAttribute="leading" secondItem="3zN-Nc-wJy" secondAttribute="leading" constant="8" id="1Rk-z7-wis"/>
+                            <constraint firstItem="Oqm-kw-a9I" firstAttribute="top" secondItem="3zN-Nc-wJy" secondAttribute="top" constant="22" id="GHG-4M-ShB"/>
+                            <constraint firstItem="3zN-Nc-wJy" firstAttribute="trailing" secondItem="Oqm-kw-a9I" secondAttribute="trailing" constant="20" id="LOx-mj-04M"/>
+                            <constraint firstItem="WgP-XR-oMg" firstAttribute="top" secondItem="Oqm-kw-a9I" secondAttribute="bottom" constant="8" id="bHZ-QT-2gn"/>
+                            <constraint firstItem="WgP-XR-oMg" firstAttribute="bottom" secondItem="3zN-Nc-wJy" secondAttribute="bottom" id="dSb-gs-Iog"/>
+                            <constraint firstItem="3zN-Nc-wJy" firstAttribute="trailing" secondItem="WgP-XR-oMg" secondAttribute="trailing" constant="8" id="dg9-O2-2ng"/>
+                            <constraint firstItem="WgP-XR-oMg" firstAttribute="leading" secondItem="3zN-Nc-wJy" secondAttribute="leading" constant="8" id="o7w-as-kIa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3zN-Nc-wJy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0at-UP-MAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347.82608695652175" y="154.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checked-checkbox" width="100" height="100"/>
+        <image name="unchecked-checkbox" width="100" height="100"/>
+    </resources>
+</document>
